@@ -1,0 +1,48 @@
+// Color Variables
+$main-bg: #FF6A34;
+
+$testing-colors: (
+    #FF6A34,
+    #34FF56,
+    #34AEFF,
+    #9334FF,
+);
+
+// Font Variables
+$header-font: ("Oswald", "Impact", sans-serif);
+$body-font: ("proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif);
+
+html{
+    background-color: nth($testing-colors, 1);
+    font-family: $header-font;
+    font-size: 30px;
+    color: white;
+}
+
+.vertical-text {
+    background-color: nth($testing-colors, 1);
+    width: 32px;
+    span{
+        display: inline-block;
+    }
+}
+
+#firstname{
+    text-align: center;
+    line-height: 52px;
+}
+
+#lastname{
+    line-height: 47px;
+
+    span:nth-child(3){
+        position: relative;
+        top: -0.35rem;
+        transform: scaleY(.8);
+    }
+
+    span:nth-child(4){
+        position: relative;
+        top: -0.34rem;
+    }
+}

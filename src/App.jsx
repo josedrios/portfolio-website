@@ -5,14 +5,24 @@ import './styles.scss'
 
 function App() {
   return (
-    <div>
+    <div id='app-container'>
       <NameHeader/>
+      <div id="body-container">
+        <JobHeader/>
+        <div id='info-container'>
+          <InfoSection/>
+          <div id='side-bar-container'>
+            <Catalogue/>
+            <Copyright/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
 const NameHeader = () => (
-  <div >
+  <div id='name-header-container'>
     <h1 id='firstname' className='vertical-text'>
       <span>J</span>
       <span>O</span>
@@ -25,6 +35,30 @@ const NameHeader = () => (
       <span>0</span>
       <span>S</span>
     </h1>
+  </div>
+)
+
+const JobHeader = () => (
+  <div id="job-header-container">
+    <h1>Web Developer & </h1>
+    <h1>Software Engineer</h1>
+  </div>
+)
+const InfoSection = () => (
+  <div id="info-section-container">
+    info section
+  </div>
+)
+
+const Catalogue = () => (
+  <div id="catalogue-container">
+    catalogue
+  </div>
+)
+
+const Copyright = () => (
+  <div id="copyright-container">
+    copyright
   </div>
 )
 

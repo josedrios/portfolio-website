@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=DotGothic16&display=swap);
+
 // Color Variables
 $main-bg: #FF6A34;
 
@@ -11,12 +13,63 @@ $testing-colors: (
 // Font Variables
 $header-font: ("Oswald", "Impact", sans-serif);
 $body-font: ("proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif);
+$job-title-font: ("DotGothic16");
 
 html{
+    height: 100%;
+}
+
+body{
     background-color: nth($testing-colors, 1);
     font-family: $header-font;
     font-size: 30px;
     color: white;
+    height: 100%;
+    margin: 8px 8px 0px 8px;
+}
+
+#root{
+    height: 100%;
+}
+
+#app-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#body-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#info-container{
+    display: flex;
+    width: 100%;
+}
+
+.info-section-container{
+    justify-self: center;
+}
+
+#side-bar-container{
+    justify-self: flex-end;
+}
+
+#name-header-container{
+    display: inline;
+}
+
+#job-header-container{
+    font-family: "DotGothic16";
+    h1{
+        text-align: right;
+        text-wrap: nowrap;
+        font-size: 40px;
+        line-height: 25px;
+    }
 }
 
 .vertical-text {

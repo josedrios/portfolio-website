@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './styles.scss'
-import bigScreenImage from './images/bigmonitor.png'
+import bigScreenImage from './images/squarescreen.png'
 
 function App() {
   return (

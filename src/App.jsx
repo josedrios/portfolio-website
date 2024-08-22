@@ -1,8 +1,6 @@
 import * as React from 'react';
 import './styles.scss'
 
-//Handlers
-
 function App() {
   return (
     <div id='app-container'>
@@ -44,6 +42,7 @@ const JobHeader = () => (
     <h1>Software Engineer</h1>
   </div>
 )
+
 const InfoSection = () => (
   <div id="info-section-container">
     info section
@@ -52,13 +51,16 @@ const InfoSection = () => (
 
 const Catalogue = () => (
   <div id="catalogue-container">
-    catalogue
+    <div>01 home</div>
+    <div>02 projects</div>
+    <div>03 about</div>
+    <div>04 contact</div>
   </div>
 )
 
 const Copyright = () => (
   <div id="copyright-container">
-    copyright
+    Copyright and all that other stuff...
   </div>
 )
 

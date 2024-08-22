@@ -43,6 +43,7 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 #body-container{
@@ -61,22 +62,33 @@ body{
 }
 
 #info-section-container{
-    flex: 4;
+    flex: 5;
     border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    img{
+        object-fit: contain;
+        max-height: 718px;
+        width: 100%;
+        position: relative;
+        top: 10px;
+    }
 }
 
 #side-bar-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 2;
+    flex: 1;
     border: 2px solid greenyellow;
 }
 
 #catalogue-container{
-    @include add-font($catalogue-font, 43px,200);
+    @include add-font($catalogue-font, 25px,200);
     line-height: 58px;
-    padding: 30% 0 0 20%;
+    padding: 30% 0 0 0;
 }
 
 #copyright-container{

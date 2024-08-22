@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './styles.scss'
+import bigScreenImage from './images/bigscreen.png'
 
 function App() {
   return (
@@ -45,16 +46,15 @@ const JobHeader = () => (
 
 const InfoSection = () => (
   <div id="info-section-container">
-    info section
+    <img src={bigScreenImage} alt="" />
   </div>
 )
 
 const Catalogue = () => (
   <div id="catalogue-container">
-    <div>01 home</div>
+    <div>01 about</div>
     <div>02 projects</div>
-    <div>03 about</div>
-    <div>04 contact</div>
+    <div>03 contact</div>
   </div>
 )
 

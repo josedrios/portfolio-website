@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=DotGothic16&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
 
 // Color Variables
 $main-bg: #FF6A34;
@@ -12,7 +13,7 @@ $testing-colors: (
 );
 
 // Font Family Variables
-$header-font: ("Oswald", "Impact", sans-serif);
+$header-font: ("Oswald", sans-serif);
 $body-font: ("proxima-nova", "HelveticaNeue", "Helvetica", "Arial", sans-serif);
 $job-title-font: ("DotGothic16");
 $catalogue-font: ("Inconsolata", monospace);
@@ -32,7 +33,7 @@ html, #root{
 
 body{
     // FIND NEW WEIGHTS FOR THIS FONT
-    @include add-font($header-font, 30px, 0);
+    @include add-font($body-font, 30px, 0);
     color: white;
     height: 100%;
     margin: 0px 8px 0px 8px;
@@ -85,44 +86,50 @@ body{
 }
 
 #name-header-container{
+    width: 110px;
     display: inline;
 }
 
 #job-header-container{
-    font-family: "DotGothic16";
+    @include add-font($job-title-font, 20px, 0);
+    text-align: right;
+    text-wrap: nowrap;
+    line-height: 25px;
     padding-right: 15px;
-    h1{
-        text-align: right;
-        text-wrap: nowrap;
-        font-size: 40px;
-        line-height: 25px;
-    }
 }
 
 .vertical-text {
-    background-color: nth($testing-colors, 1);
-    width: 32px;
+    width: 60px;
+    @include add-font($header-font, 50px, 600);
     span{
-        display: inline-block;
+        display: block;
+        line-height: 45px;
     }
 }
 
 #firstname{
     text-align: center;
     line-height: 52px;
+    margin-bottom: 0px;
 }
 
 #lastname{
+    margin-top: 0px;
     line-height: 47px;
+    padding-left: 50px;
+    span:nth-child(1){
+        position: relative;
+        bottom: -0.26rem;
+    }
 
     span:nth-child(3){
         position: relative;
-        top: -0.35rem;
-        transform: scaleY(.8);
+        top: -0.85rem;
+        transform: scaleY(.9);
     }
 
     span:nth-child(4){
         position: relative;
-        top: -0.34rem;
+        top: -0.95rem;
     }
 }

@@ -1,0 +1,7 @@
+@mixin add-font($font, $size, $weight){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

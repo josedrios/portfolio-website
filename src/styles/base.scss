@@ -15,20 +15,21 @@
   }
   
   .gradient-bubble {
-    
-    pointer-events: none;
-    --size: 500px;
-    --speed: 15s;
-    --easing: cubic-bezier(0.8, 0.8, 0.8, 0.8);
-  
+    // Z-Index should be always kept aware of just incase
+    // any visual complications arise
+    z-index: 1;
+    --size: 700px;
+    --speed: 4s;
+    --easing: ease;
     width: var(--size);
     height: var(--size);
-    filter: blur(calc(var(--size) / 2));
-    background-image: linear-gradient(hsl(276, 41%, 36%), hsl(3, 88%, 72%));
+    //filter: blur(calc(var(--size) / 2));
+    background-image: linear-gradient(hsl(276, 41%, 36%), hsl(3, 88%, 75%));
     animation: rotate var(--speed) var(--easing) alternate infinite;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 50%;
   }
   
+  // Make responsive adjustments later on (OPTIONAL)
 //   @media (max-width: 720px) {
 //     .gradient-bubble {
 //       --size: 30vh;

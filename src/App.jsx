@@ -4,10 +4,12 @@ import './styles/index.scss'
 function App() {
   const [mousePosition, setMousePosition] = React.useState({
       x: 0,
-      y: 0,
+      y: -500,
     }
   );
   console.log(mousePosition);
+
+  const [isMouseOnScreen, setIsMouseOnScreen] = React.useState(true);
 
   React.useEffect(() => {
     const mouseMove = e => {
@@ -15,6 +17,7 @@ function App() {
         x: e.clientX,
         y: e.clientY
       })
+
     }
     window.addEventListener("mousemove", mouseMove)
     return () => {
@@ -26,8 +29,8 @@ function App() {
     <>
       <div style={{
         position: 'fixed',
-        left: `${mousePosition.x - 200}px`,
-        top: `${mousePosition.y - 200}px`,
+        left: `${mousePosition.x - 350}px`,
+        top: `${mousePosition.y - 350}px`,
       }} className="gradient-bubble"/>
     </>
   )

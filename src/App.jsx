@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './styles/index.scss'
+import './styles/main.scss'
 
 function App() {
   const [mousePosition, setMousePosition] = React.useState({
@@ -37,7 +37,7 @@ function App() {
 
         </header>
         <main className='container' id="content-container">
-          
+
         </main>
       </div>
     </>

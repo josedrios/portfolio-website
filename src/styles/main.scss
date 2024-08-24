@@ -1,0 +1,14 @@
+// Abstracts
+@import './abstracts/variables.scss';
+@import './abstracts/mixins.scss';
+@import './abstracts/functions.scss';
+
+// Base
+@import './base/reset.scss';
+@import './base/typography.scss';
+
+// Layout
+@import './layout/main.scss';
+
+// Components
+@import './components/gradient-bubble.scss';

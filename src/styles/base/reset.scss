@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    border: none;
+}
+
+html{
+    line-height: 1.3;
+    color: $header-color;
+    // have back up fonts
+}
+
+body{
+    margin: 0;
+    line-height: inherit;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $main-bg;
+    inset: 0;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}

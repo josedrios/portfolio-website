@@ -9,10 +9,11 @@ header, main {
     width: 48%;
     display: flex;
     flex-direction: column;
-    padding: 60px 40px;
+    
 }
 
 header {
+    padding: 60px 0px 60px 40px;
     justify-content: space-between;
     min-height: 200px;
     position: sticky;
@@ -21,6 +22,7 @@ header {
 }
 
 main {
+    padding: 60px 40px 60px 0px;
     border: 2px solid violet;
     min-height: 100vh;
     div {
@@ -32,7 +34,7 @@ main {
     }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 970px){
     #layout-container {
         flex-direction: column;
     }
@@ -46,6 +48,10 @@ main {
         position: static;
         height: 300px;
         min-height: 300px;
+    }
+
+    nav{
+        display: none;
     }
 }
 

@@ -12,8 +12,18 @@ header {
 }
 
 nav {
-    
+    color: $unchosen-nav-link;
+    line-height: 40px;
     h3 {
         @include add-font($catalogue-font, 30px, 300);
+    }
+
+    h3{
+        transition: 0.2s ease-out;
+    }
+
+    h3:hover{
+        color: white;
+        font-weight: 400;
     }
 }

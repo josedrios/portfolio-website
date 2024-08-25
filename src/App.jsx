@@ -43,12 +43,20 @@ function App() {
             <h2 id='job-title'>Web Developer & Software Engineer</h2>
           </div>
           <nav>
-            <h3>01 About Me</h3>
-            <h3>02 Projects</h3>
-            <h3>04 Undecided</h3>
-            <h3>03 Contact</h3>
+            <h3>
+              <span>01</span> ABOUT ME
+              </h3>
+            <h3>
+              <span>02</span> PROJECTS
+            </h3>
+            <h3>
+              <span>03</span> CONTACT
+            </h3>
+            <h3>
+              <span>04</span> FAQ
+            </h3>
           </nav>
-          <div>Potential Link Div</div>
+          <div>Potential Link Section</div>
         </header>
         <main id="content-container">
           <div>

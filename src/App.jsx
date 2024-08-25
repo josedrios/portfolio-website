@@ -38,7 +38,17 @@ function App() {
 
       <div id='layout-container'>
         <header id="header-container">
-
+          <div>
+            <h1 id='fullname-title'>Jose De Jesus Rios</h1>
+            <h2 id='job-title'>Web Developer & Software Engineer</h2>
+          </div>
+          <nav>
+            <h3>01 About Me</h3>
+            <h3>02 Projects</h3>
+            <h3>04 Undecided</h3>
+            <h3>03 Contact</h3>
+          </nav>
+          <div>Potential Link Div</div>
         </header>
         <main id="content-container">
           <div>

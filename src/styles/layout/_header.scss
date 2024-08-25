@@ -1,0 +1,19 @@
+header {
+    border: 2px solid lime;
+}
+
+#fullname-title {
+    @include add-font($header-font, 40px, 300);
+}
+
+#job-title {
+    @include add-font($header-font, 20px, 300);
+    color: rgb(183, 183, 183);
+}
+
+nav {
+    
+    h3 {
+        @include add-font($catalogue-font, 30px, 300);
+    }
+}

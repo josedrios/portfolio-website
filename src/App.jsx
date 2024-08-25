@@ -27,19 +27,35 @@ function App() {
 
   return (
     <>
-      <div style={{
-        position: 'fixed',
-        left: `${mousePosition.x - 150}px`,
-        top: `${mousePosition.y - 150}px`,
-      }} className="gradient-bubble"/>
-      <div className='container' id='layout-container'>
-        <header className='container' id="header-container">
+      <div 
+        style={{
+          position: 'fixed',
+          left: `${mousePosition.x - 200}px`,
+          top: `${mousePosition.y - 200}px`,
+        }} 
+        className="gradient-bubble"
+      />
+
+      <div id='layout-container'>
+        <header id="header-container">
 
         </header>
-        <main className='container' id="content-container">
-
+        <main id="content-container">
+          <div>
+            1
+          </div>
+          <div>
+            2
+          </div>
+          <div>
+            3
+          </div>
+          <div>
+            4
+          </div>
         </main>
       </div>
+
     </>
   )
 }

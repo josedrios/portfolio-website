@@ -1,0 +1,48 @@
+#layout-container {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+header {
+    width: 48%;
+    min-height: 200px;
+    border: 2px solid lime;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+main {
+    width: 48%;
+    border: 2px solid violet;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    div {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        min-height: 800px;
+        border: 2px solid red;
+    }
+}
+
+@media(max-width: 1000px){
+    #layout-container {
+        flex-direction: column;
+    }
+
+    header, main {
+        //margin: 20px 0px 40px 0px;
+        width: 100%;
+    }
+
+    header {
+        position: static;
+        height: 300px;
+        min-height: 300px;
+    }
+}

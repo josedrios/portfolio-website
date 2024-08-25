@@ -1,14 +1,16 @@
 // Abstracts
-@import './abstracts/variables.scss';
-@import './abstracts/mixins.scss';
-@import './abstracts/functions.scss';
+@import './abstracts/_variables.scss';
+@import './abstracts/_mixins.scss';
+@import './abstracts/_functions.scss';
+@import './abstracts/_placeholders.scss';
 
 // Base
-@import './base/reset.scss';
-@import './base/typography.scss';
+@import './base/_reset.scss';
+@import './base/_typography.scss';
 
 // Layout
-@import './layout/main.scss';
+@import './layout/layout.scss';
+
 
 // Components
-@import './components/gradient-bubble.scss';
+@import './components/_gradient-bubble.scss';

@@ -56,7 +56,7 @@ function App() {
               <span>04</span> FAQ
             </h3>
           </nav>
-          <div>Potential Link Section</div>
+          <div id='links-section'>Potential Link Section</div>
         </header>
         <main id="content-container">
           <div>

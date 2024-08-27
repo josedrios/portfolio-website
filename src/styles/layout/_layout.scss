@@ -41,12 +41,17 @@ main {
     header, main {
         //margin: 20px 0px 40px 0px;
         width: 100%;
+        padding: 40px 10% 30px 10%;
     }
 
     header {
         position: static;
         height: 300px;
         min-height: 300px;
+    }
+
+    main {
+        padding-top: 0;
     }
 
     nav{

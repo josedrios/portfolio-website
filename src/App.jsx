@@ -43,8 +43,9 @@ function App() {
       <div id='layout-container'>
         <header id="header-container">
           <div>
-            <h1 id='fullname-title'>Jose De Jesus Rios</h1>
-            <h2 id='job-title'>Web Developer & Software Engineer</h2>
+            <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
+            <h1 class='fullname-title' id='shortname'>Jose Rios</h1>
+            <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
           </div>
           <nav>
             <h3>

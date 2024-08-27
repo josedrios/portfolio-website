@@ -2,8 +2,12 @@ header {
     border: 2px solid lime;
 }
 
-#fullname-title {
+.fullname-title {
     @include add-font($header-font, 40px, 300);
+}
+
+#shortname{
+    display: none;
 }
 
 #job-title {
@@ -51,6 +55,17 @@ nav {
 
 @media (max-width: 970px){
     #links-section{
+        margin: auto;
         max-width: 500px;
+    }
+}
+
+@media (max-width: 510px) {
+    #longname{
+        display: none;
+    }
+
+    #shortname{
+        display: block;
     }
 }

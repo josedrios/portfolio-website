@@ -1,5 +1,9 @@
 import * as React from 'react';
-import './styles/main.scss'
+import './styles/main.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function App() {
   const [mousePosition, setMousePosition] = React.useState({
@@ -44,19 +48,32 @@ function App() {
           </div>
           <nav>
             <h3>
-              <span>01</span> ABOUT ME
-              </h3>
-            <h3>
-              <span>02</span> PROJECTS
+              <span id='index-one' >01</span> About Me
             </h3>
             <h3>
-              <span>03</span> CONTACT
+              <span>02</span> Projects
+            </h3>
+            <h3>
+              <span>03</span> Contact
             </h3>
             <h3>
               <span>04</span> FAQ
             </h3>
           </nav>
-          <div id='links-section'>Potential Link Section</div>
+          <div id='links-section'>
+            <a href="">
+              <FontAwesomeIcon className='icon' icon={faBars} />
+            </a>
+            <a href="">
+              <FontAwesomeIcon className='icon' icon={faGithub} />
+            </a>
+            <a href="">
+              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+            </a>
+            <a href="">
+              <FontAwesomeIcon className='icon' icon={faEnvelope} />
+            </a>
+          </div>
         </header>
         <main id="content-container">
           <div>

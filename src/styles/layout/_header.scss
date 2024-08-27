@@ -13,13 +13,10 @@ header {
 
 nav {
     color: $unchosen-nav-link;
-    line-height: 40px;
-    h3 {
-        @include add-font($catalogue-font, 30px, 300);
-    }
-
+    line-height: 45px;
     h3{
-        transition: 0.2s ease-out;
+        @include add-font($header-font, 30px, 300);
+        transition: 0.175s ease-out;
     }
 
     h3:hover{
@@ -28,12 +25,32 @@ nav {
     }
 }
 
+#index-one{
+    letter-spacing: 3px;
+}
+
 #links-section {
-    margin: 0px auto 0px 20%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-right: 20px;
     border: 0.1rem solid white;
-    padding: 20px;
+    padding: 22px;
     border-radius: 1000px;
     color: white;
-    text-wrap:nowrap;
-    width:min-content;
+    text-wrap: nowrap;
+    a {
+        color: white;
+    }
+}
+
+.icon {
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 970px){
+    #links-section{
+        max-width: 500px;
+    }
 }

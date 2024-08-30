@@ -13,7 +13,12 @@ function App() {
   );
   console.log(mousePosition);
 
-  const [isMouseOnScreen, setIsMouseOnScreen] = React.useState(true);
+  const [iconDisplay, toggleIconDisplay] = React.useState(true);
+
+  const hideIcons = (e) => {
+    e.preventDefault();
+    toggleIconDisplay((prevState) => !prevState);
+  }
 
   React.useEffect(() => {
     const mouseMove = e => {
@@ -44,7 +49,7 @@ function App() {
         <header id="header-container">
           <div>
             <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
-            <h1 class='fullname-title' id='shortname'>Jose Rios</h1>
+            <h1 class='fullname-title' id='shortname'>Jose D. Rios</h1>
             <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
           </div>
           <nav>
@@ -63,16 +68,16 @@ function App() {
           </nav>
           <div id='links-section'>
             <a href="">
-              <FontAwesomeIcon className='icon' icon={faBars} />
+              <FontAwesomeIcon onClick={hideIcons} className='icon init' icon={faBars} />
             </a>
             <a href="">
-              <FontAwesomeIcon className='icon' icon={faGithub} />
+              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faGithub} />
             </a>
             <a href="">
-              <FontAwesomeIcon className='icon' icon={faLinkedin} />
+              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faLinkedin} />
             </a>
             <a href="">
-              <FontAwesomeIcon className='icon' icon={faEnvelope} />
+              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faEnvelope} />
             </a>
           </div>
         </header>

@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-    color: $unchosen-nav-link;
+    color: $unchosen-white;
     line-height: 45px;
     h3{
         @include add-font($header-font, 30px, 300);
@@ -38,12 +38,22 @@ nav {
     justify-content: space-between;
     max-width: 400px;
     margin-right: 20px;
-    border: 0.1rem solid white;
+    border: 0.15rem solid $unchosen-white;
+    transition: border 0.175s ease;
     padding: 22px;
     border-radius: 1000px;
-    color: white;
     text-wrap: nowrap;
+
+    &:hover{
+        border: 0.15rem solid white;
+    }
+
     a {
+        color: $unchosen-white;
+        transition: color 0.175s;
+    }
+
+    a:hover {
         color: white;
     }
 }
@@ -51,7 +61,18 @@ nav {
 .icon {
     margin: 0px 20px;
     font-size: 20px;
+    transition: visibility .07s ease;
 }
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+
 
 @media (max-width: 970px){
     #links-section{
@@ -67,5 +88,17 @@ nav {
 
     #shortname{
         display: block;
+    }
+}
+
+
+@media(max-width: 450px){
+    #links-section {
+        width: 100%;
+        a{
+            svg{
+                margin: auto 0;
+            }
+        }
     }
 }

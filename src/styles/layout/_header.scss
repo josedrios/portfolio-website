@@ -1,5 +1,4 @@
 header {
-    border: 2px solid lime;
 }
 
 .fullname-title {
@@ -25,6 +24,7 @@ nav {
 
     h3:hover{
         color: white;
+        cursor: pointer;
         font-weight: 400;
     }
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './styles/main.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoffee, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
@@ -12,13 +12,6 @@ function App() {
     }
   );
   console.log(mousePosition);
-
-  const [iconDisplay, toggleIconDisplay] = React.useState(true);
-
-  const hideIcons = (e) => {
-    e.preventDefault();
-    toggleIconDisplay((prevState) => !prevState);
-  }
 
   React.useEffect(() => {
     const mouseMove = e => {
@@ -68,16 +61,16 @@ function App() {
           </nav>
           <div id='links-section'>
             <a href="">
-              <FontAwesomeIcon onClick={hideIcons} className='icon init' icon={faBars} />
+              <FontAwesomeIcon className="icon" icon={faGithub} />
             </a>
             <a href="">
-              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faGithub} />
+              <FontAwesomeIcon className="icon" icon={faLinkedin} />
             </a>
             <a href="">
-              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faLinkedin} />
+              <FontAwesomeIcon className="icon" icon={faEnvelope} />
             </a>
             <a href="">
-              <FontAwesomeIcon className={`icon {iconDisplay ? 'show' : ' hide'}`} icon={faEnvelope} />
+              <FontAwesomeIcon className="icon" icon={faFile} />
             </a>
           </div>
         </header>

@@ -83,16 +83,23 @@ function App() {
         </header>
         <main id="content-container">
           <div>
-            1
+            <h1>About Me</h1>
+            <p>Paragraph</p>
           </div>
           <div>
-            2
+            <h1>Projects</h1>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>etc.</div>
           </div>
           <div>
-            3
+            <h1>Contact</h1>
+            <p>Paragraph</p>
           </div>
           <div>
-            4
+            <h1>FAQ</h1>
+            <p>Script Like Structure</p>
           </div>
         </main>
       </div>

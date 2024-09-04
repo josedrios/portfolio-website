@@ -32,12 +32,12 @@ nav {
 
 #links-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 400px;
     margin-right: 20px;
     border: 0.15rem solid $unchosen-white;
     transition: border 0.175s ease;
-    padding: 22px;
+    padding: 20px 15px;
     border-radius: 1000px;
     text-wrap: nowrap;
 
@@ -75,6 +75,7 @@ nav {
     #links-section{
         margin: auto;
         max-width: 500px;
+        padding: 15px 10px;
     }
 }
 
@@ -87,7 +88,6 @@ nav {
         display: block;
     }
 }
-
 
 @media(max-width: 450px){
     #links-section {

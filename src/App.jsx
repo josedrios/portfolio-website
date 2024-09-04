@@ -99,9 +99,13 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='content-item'>
+          <div className='content-item' id='contact-item-container'>
             <h1 className='content-item-header'>Contact</h1>
-            <p className='content-item-body'>Paragraph</p>
+            <div>
+              <div className="contact-info-item"><span className='contact-item-header'>Email: </span>josederios@outlook.com</div>
+              <div className="contact-info-item"><span className='contact-item-header'>LinkedIn: </span><a href="">Jose Rios</a></div>
+              <div className="contact-info-item"><span className='contact-item-header'>Github: </span>josedrios</div>
+            </div>
           </div>
           <div className='content-item'>
             <h1 className='content-item-header'>FAQ</h1>

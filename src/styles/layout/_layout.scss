@@ -25,13 +25,7 @@ main {
     padding: 60px 40px 60px 0px;
     border: 2px solid $main-border;
     min-height: 100vh;
-    .content-item {
-        text-align: center;
-        align-content: center;
-        width: 100%;
-        min-height: 800px;
-        border: 2px solid $content-border;
-    }
+    z-index: -100;
 }
 
 @media(max-width: 970px){

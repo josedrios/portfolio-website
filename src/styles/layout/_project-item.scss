@@ -1,0 +1,32 @@
+#project-item-container{
+    .project-item:last-of-type {
+        padding-bottom: 0px;
+    }
+}
+
+.project-item{
+    padding-bottom: 25px;
+    * {
+        padding-bottom: 10px;
+    }
+}
+
+.project-header{
+    font-size: 25px;
+    font-weight: 450;
+    //color: $project-header;
+    color: #F2F2F2;
+}
+
+// HAVE FA-ARROW-RIGHT INDICATE TO THE USER THAT
+// THE HEADER IS CLICKABLE (WHEN HEADER IS HOVERED
+// HAVE ARROW MOVE SLIGHTLY TO THE RIGHT WITH A
+// NICE TRANSITION)
+
+.project-skills{
+    color: #CCCCCC;
+}
+
+.project-summary{
+    color: #A9A9A9;
+}

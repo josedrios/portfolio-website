@@ -81,10 +81,23 @@ function App() {
           </div>
           <div className='content-item'>
             <h1 className='content-item-header'>Projects</h1>
-            <div className='content-item-body'>1</div>
-            <div className='content-item-body'>2</div>
-            <div className='content-item-body'>3</div>
-            <div className='content-item-body'>etc.</div>
+            <div className='content-item-body' id='project-item-container'>
+              <div className="project-item">
+                <h1 className="project-header">Portfolio Website</h1>
+                <p className="project-skills">Skills: React / Javascript / CSS</p>
+                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
+              </div>
+              <div className="project-item">
+                <h1 className="project-header">Portfolio Website</h1>
+                <p className="project-skills">Skills: React / Javascript / CSS</p>
+                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
+              </div>
+              <div className="project-item">
+                <h1 className="project-header">Portfolio Website</h1>
+                <p className="project-skills">Skills: React / Javascript / CSS</p>
+                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
+              </div>
+            </div>
           </div>
           <div className='content-item'>
             <h1 className='content-item-header'>Contact</h1>

@@ -1,0 +1,23 @@
+.content-item{
+    display: flex;
+    flex-direction: column;
+    font-family: $header-font;
+}
+
+.content-item-header{
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.content-item-body{
+    text-align: left;
+    font-size: 19px;
+    color: $unchosen-white;
+}
+
+.bold-section{
+    color: white;
+    font-weight: 450;
+}
+

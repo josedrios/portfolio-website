@@ -75,24 +75,24 @@ function App() {
           </div>
         </header>
         <main id="content-container">
-          <div>
-            <h1>About Me</h1>
-            <p>Paragraph</p>
+          <div className='content-item'>
+            <h1 className='content-item-header'>About Me</h1>
+            <p className='content-item-body'>Welcome to my <span className='bold-section'>website</span>! This is a placeholder "About Me" paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the <span className='bold-section'>content</span> here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase! -Written by AI</p>
           </div>
-          <div>
-            <h1>Projects</h1>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>etc.</div>
+          <div className='content-item'>
+            <h1 className='content-item-header'>Projects</h1>
+            <div className='content-item-body'>1</div>
+            <div className='content-item-body'>2</div>
+            <div className='content-item-body'>3</div>
+            <div className='content-item-body'>etc.</div>
           </div>
-          <div>
-            <h1>Contact</h1>
-            <p>Paragraph</p>
+          <div className='content-item'>
+            <h1 className='content-item-header'>Contact</h1>
+            <p className='content-item-body'>Paragraph</p>
           </div>
-          <div>
-            <h1>FAQ</h1>
-            <p>Script Like Structure</p>
+          <div className='content-item'>
+            <h1 className='content-item-header'>FAQ</h1>
+            <p className='content-item-body'>Script Like Structure</p>
           </div>
         </main>
       </div>

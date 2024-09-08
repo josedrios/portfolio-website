@@ -7,13 +7,11 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const projects = [
   {
-    title: "Project 1",
-    summary: "This is the summary"
+    title: "Project Title",
+    skills: "React, JS, CSS, HTML",
+    date: "Date (Month/Year)",
+    summary: "This is the summary (Paragraph)"
   },
-  {
-    title: "Project 2",
-    summary: "This is the summary"
-  }
 ]
 
 function App() {
@@ -96,21 +94,14 @@ function App() {
               <FontAwesomeIcon className='icon' id='project-icon' icon={faArrowRight} />
             </span>
             <div className='content-item-body' id='project-item-container'>
-              <div className="project-item">
-                <h1 className="project-header">Portfolio Website</h1>
-                <p className="project-skills">Skills: React / Javascript / CSS</p>
-                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
+            {projects.map((project, index) => (
+              <div className="project-item" key={index}>
+                <h1 className="project-header">{project.title}</h1>
+                <p className="project-skills">Skills: {project.skills}</p>
+                <p className="project-date">Date: {project.date}</p>
+                <p className="project-summary">{project.summary}</p>
               </div>
-              <div className="project-item">
-                <h1 className="project-header">Portfolio Website</h1>
-                <p className="project-skills">Skills: React / Javascript / CSS</p>
-                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
-              </div>
-              <div className="project-item">
-                <h1 className="project-header">Portfolio Website</h1>
-                <p className="project-skills">Skills: React / Javascript / CSS</p>
-                <p className="project-summary">This project is a web application that allows users to create and manage personal to-do lists with real-time updates using React and Firebase. It features user authentication, task prioritization</p>
-              </div>
+            ))}
             </div>
           </div>
           <div className='content-item' id='contact-item-container'>

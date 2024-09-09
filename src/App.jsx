@@ -90,13 +90,15 @@ function App() {
           </div>
           <div className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
-            <span>
-              <FontAwesomeIcon className='icon' id='project-icon' icon={faArrowRight} />
-            </span>
             <div className='content-item-body' id='project-item-container'>
             {projects.map((project, index) => (
               <div className="project-item" key={index}>
-                <h1 className="project-header">{project.title}</h1>
+                <div className='project-header-container'>
+                  <h1 className="project-header">{project.title}</h1>
+                  <span>
+                    <FontAwesomeIcon className='icon' id='project-icon' icon={faArrowRight} />
+                  </span>
+                </div>
                 <p className="project-skills">Skills: {project.skills}</p>
                 <p className="project-date">Date: {project.date}</p>
                 <p className="project-summary">{project.summary}</p>

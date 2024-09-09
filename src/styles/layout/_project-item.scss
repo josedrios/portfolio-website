@@ -13,6 +13,11 @@
     display: inline-block;
 }
 
+.project-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .project-item{
     padding-bottom: 25px;
     * {

@@ -95,9 +95,9 @@ function App() {
               <div className="project-item" key={index}>
                 <div className='project-header-container'>
                   <h1 className="project-header">{project.title}</h1>
-                  <span>
-                    <FontAwesomeIcon className='icon' id='project-icon' icon={faArrowRight} />
-                  </span>
+                  <a href="" id='project-icon-container'>
+                    <FontAwesomeIcon className='icon' icon={faArrowRight} />
+                  </a>
                 </div>
                 <p className="project-skills">Skills: {project.skills}</p>
                 <p className="project-date">Date: {project.date}</p>

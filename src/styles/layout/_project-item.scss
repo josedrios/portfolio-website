@@ -9,8 +9,16 @@
     display: inline-block;
 }
 
-#project-icon {
+#project-icon-container{
     display: inline-block;
+    pointer-events: auto;
+    cursor: pointer;
+    height: 100%;
+    svg {
+        height: 26px;
+        padding-top: 3px;
+        margin-bottom: 0;
+    }
 }
 
 .project-header-container {

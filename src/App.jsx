@@ -95,7 +95,7 @@ function App() {
               <div className="project-item" key={index}>
                 <div className='project-header-container'>
                   <h1 className="project-header">{project.title}</h1>
-                  <a href="" id='project-icon-container'>
+                  <a href="#" id='project-icon-container'>
                     <FontAwesomeIcon className='icon' icon={faArrowRight} />
                   </a>
                 </div>

@@ -7,17 +7,23 @@
 
 #project-content-header {
     display: inline-block;
+
 }
 
 #project-icon-container{
     display: inline-block;
     pointer-events: auto;
-    cursor: pointer;
-    height: 100%;
     svg {
         height: 26px;
         padding-top: 3px;
-        margin-bottom: 0;
+        margin-left: 10px;
+        transition: 0.1s ease-out;
+    }
+}
+
+#project-icon-container:hover {
+    svg {
+        transform: translateX(10px);
     }
 }
 
@@ -26,11 +32,8 @@
     flex-direction: row;
 }
 
-.project-item{
-    padding-bottom: 25px;
-    * {
-        padding-bottom: 10px;
-    }
+.project-item *:not(:first-child) {
+    padding-bottom: 10px;
 }
 
 .project-header{
@@ -38,11 +41,6 @@
     font-weight: 450;
     color: #F2F2F2;
 }
-
-// HAVE FA-ARROW-RIGHT INDICATE TO THE USER THAT
-// THE HEADER IS CLICKABLE (WHEN HEADER IS HOVERED
-// HAVE ARROW MOVE SLIGHTLY TO THE RIGHT WITH A
-// NICE TRANSITION)
 
 .project-skills{
     color: #CCCCCC;

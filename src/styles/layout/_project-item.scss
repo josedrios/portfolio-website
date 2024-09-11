@@ -1,13 +1,14 @@
 #project-item-container{
     padding-bottom: 25px;
-    .project-item:last-of-type {
-        padding-bottom: 0px;
-    }
+}
+
+#project-item-container .project-item:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 #project-content-header {
     display: inline-block;
-
+    margin-bottom: 10px;
 }
 
 #project-icon-container{

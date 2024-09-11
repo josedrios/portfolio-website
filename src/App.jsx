@@ -7,10 +7,22 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const projects = [
   {
-    title: "Project Title",
+    title: "Lord of The Rings",
     skills: "React, JS, CSS, HTML",
-    date: "Date (Month/Year)",
-    summary: "This is the summary (Paragraph)"
+    date: "August 2024",
+    summary: "The Lord of the Rings is amazing because it masterfully combines epic storytelling with deep, immersive world-building. J.R.R. Tolkien created an entire universe, complete with its own history, languages, and cultures, making Middle-earth feel incredibly real and alive. The characters are rich and complex, from the bravery of Frodo and Sam to the wisdom of Gandalf and the redemption of Aragorn. The themes of friendship, sacrifice, and the struggle between good and evil resonate on a universal level. Its blend of adventure, myth, and human emotion makes it a timeless masterpiece that continues to inspire generations."
+  },
+  {
+    title: "One Piece",
+    skills: "C++, VMWare, VS Code",
+    date: "May 2022",
+    summary: "One Piece is amazing because it combines thrilling adventure, deep emotional storytelling, and a vast, richly detailed world. Eiichiro Oda masterfully balances humor, action, and drama as Monkey D. Luffy and his crew pursue their dreams across the seas. Each character is uniquely developed with their own compelling backstories and motivations, making the Straw Hat Pirates feel like a true family. The overarching themes of friendship, freedom, and perseverance resonate deeply with fans. With its intricate world-building, epic battles, and heartfelt moments, One Piece remains a beloved masterpiece in anime and manga."
+  },
+  {
+    title: "Gears of War",
+    skills: "Java, IntelliJ",
+    date: "Sept 2024",
+    summary: "Gears of War is amazing because it revolutionized the third-person shooter genre with its intense, cover-based combat system and gritty, cinematic storytelling. The game’s dark, post-apocalyptic setting, combined with visceral action, creates an immersive and adrenaline-pumping experience. The characters, like Marcus Fenix and Dom Santiago, are compelling and relatable, offering emotional depth amidst the chaos of war. The cooperative gameplay, whether in campaign or multiplayer modes, adds a strategic layer that makes teamwork crucial. Its iconic chainsaw gun and larger-than-life enemies make Gears of War a standout in gaming history."
   },
 ]
 
@@ -99,8 +111,8 @@ function App() {
                     <FontAwesomeIcon className='icon' icon={faArrowRight} />
                   </a>
                 </div>
+                <p className="project-date">{project.date}</p>
                 <p className="project-skills">Skills: {project.skills}</p>
-                <p className="project-date">Date: {project.date}</p>
                 <p className="project-summary">{project.summary}</p>
               </div>
             ))}

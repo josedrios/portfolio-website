@@ -1,3 +1,15 @@
 #contact-item-container{
     margin-bottom: 30px;
 }
+
+.contact-info-item {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: $unchosen-white;
+    a {
+        color: $unchosen-white;
+    }
+    span {
+        color: white;
+    }
+}

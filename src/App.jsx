@@ -5,6 +5,9 @@ import { faArrowRight, faBars, faCoffee, faFile } from '@fortawesome/free-solid-
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
+const aboutMe = "Welcome to my website! This is a placeholder About Me paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the content here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase! -Written by AI"
+// NOTE: When using bold text for a phrase, reference bold-text id (SASS)
+
 const projects = [
   {
     title: "Lord of The Rings",
@@ -98,7 +101,7 @@ function App() {
         <main id="content-container">
           <div className='content-item'>
             <h1 className='content-item-header'>About Me</h1>
-            <p className='content-item-body'>Welcome to my <span className='bold-section'>website</span>! This is a placeholder "About Me" paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the <span className='bold-section'>content</span> here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase! -Written by AI</p>
+            <p className='content-item-body'>{aboutMe}</p>
           </div>
           <div className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>

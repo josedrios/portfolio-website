@@ -124,9 +124,20 @@ function App() {
           <div className='content-item' id='contact-item-container'>
             <h1 className='content-item-header'>Contact</h1>
             <div>
-              <div className="contact-info-item"><span className='contact-item-header'>Email: </span>josederios@outlook.com</div>
-              <div className="contact-info-item"><span className='contact-item-header'>LinkedIn: </span><a href="">Jose Rios</a></div>
-              <div className="contact-info-item"><span className='contact-item-header'>Github: </span>josedrios</div>
+              <div className="contact-info-item">
+                <div className='contact-item-header'>Email: </div>
+                <div className="contact-item-content">josederios@outlook.com</div>
+              </div>
+              <div className="contact-info-item">
+                <div className='contact-item-header'>LinkedIn: </div>
+                <div className="contact-item-content">
+                  <a href="">Jose Rios</a>
+                </div>
+              </div>
+              <div className="contact-info-item">
+                <div className='contact-item-header'>Github: </div>
+                <div className="contact-item-content">josedrios</div>
+              </div>
             </div>
           </div>
           <div className='content-item'>

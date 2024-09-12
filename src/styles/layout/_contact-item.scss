@@ -3,13 +3,25 @@
 }
 
 .contact-info-item {
-    margin-bottom: 10px;
     font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+.contact-item-header {
+    color: white;
+}
+
+.contact-item-content {
+    justify-content: end;
     color: $unchosen-white;
     a {
         color: $unchosen-white;
     }
-    span {
-        color: white;
-    }
 }
+

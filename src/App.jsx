@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './styles/main.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faBars, faCoffee, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars, faCoffee, faCopy, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
@@ -123,22 +123,29 @@ function App() {
           </div>
           <div className='content-item' id='contact-item-container'>
             <h1 className='content-item-header'>Contact</h1>
-            <div>
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
-                <div className="contact-item-content">josederios@outlook.com</div>
+                <div className="contact-item-content">
+                  josederios@outlook.com
+                  <FontAwesomeIcon className='icon' icon={faCopy} />
+                </div>
               </div>
               <div className="contact-info-item">
                 <div className='contact-item-header'>LinkedIn: </div>
                 <div className="contact-item-content">
-                  <a href="">Jose Rios</a>
+                  <a href="">
+                    Jose Rios
+                    <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
+                  </a>
                 </div>
               </div>
               <div className="contact-info-item">
                 <div className='contact-item-header'>Github: </div>
-                <div className="contact-item-content">josedrios</div>
+                <div className="contact-item-content">
+                  josedrios
+                  <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
+                </div>
               </div>
-            </div>
           </div>
           <div className='content-item'>
             <h1 className='content-item-header'>FAQ</h1>

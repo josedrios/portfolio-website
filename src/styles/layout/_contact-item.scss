@@ -18,10 +18,34 @@
 }
 
 .contact-item-content {
+    display: inline-block;
     justify-content: end;
     color: $unchosen-white;
     a {
         color: $unchosen-white;
+    }
+
+    .icon {
+        color: $unchosen-white;
+        margin: 0px 10px;
+        font-size: 17px;
+    }
+
+    #contact-icon-external {
+        margin: 0px 10px 1px 10px;
+        font-size: 15px
+    }
+}
+
+.contact-item-content:hover {
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .icon {
+        color: white;
     }
 }
 

@@ -42,23 +42,27 @@ nav {
     justify-content: space-around;
     max-width: 400px;
     margin-right: 20px;
-    border: 0.15rem solid $unchosen-white;
+    border-top: 0.1rem solid $unchosen-white;
     transition: border 0.175s ease;
     padding: 20px 15px;
-    border-radius: 1000px;
     text-wrap: nowrap;
-
-    &:hover{
-        border: 0.15rem solid white;
-    }
 
     a {
         color: $unchosen-white;
         transition: color 0.175s;
     }
 
+    svg {
+        transition: 0.15s ease-out;
+    }
+
     a:hover {
         color: white;
+
+        svg {
+            transform: scale(1.2);
+
+        }
     }
 }
 
@@ -80,7 +84,7 @@ nav {
     #links-section{
         margin: auto;
         max-width: 500px;
-        padding: 15px 10px;
+        padding: 20px 10px;
     }
 }
 

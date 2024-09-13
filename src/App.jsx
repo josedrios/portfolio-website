@@ -126,8 +126,10 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
-                  josederios@outlook.com
-                  <FontAwesomeIcon className='icon' icon={faCopy} />
+                  <div>
+                    josederios@outlook.com
+                    <FontAwesomeIcon className='icon' icon={faCopy} />
+                  </div>
                 </div>
               </div>
               <div className="contact-info-item">
@@ -142,8 +144,10 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Github: </div>
                 <div className="contact-item-content">
-                  josedrios
-                  <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
+                  <a href="">
+                    josedrios
+                    <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
+                  </a>
                 </div>
               </div>
           </div>

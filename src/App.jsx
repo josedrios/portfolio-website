@@ -71,16 +71,18 @@ function App() {
           </div>
           <nav>
             <h3>
-              <span id='index-one' >01</span> About Me
+              <span>
+                <span id='index-one' >01</span> About Me
+              </span>
             </h3>
             <h3>
-              <span>02</span> Projects
+              <span>02 Projects</span>
             </h3>
             <h3>
-              <span>03</span> Contact
+              <span>03 Contact</span>
             </h3>
             <h3>
-              <span>04</span> FAQ
+              <span>04 FAQ</span>
             </h3>
           </nav>
           <div id='links-section'>

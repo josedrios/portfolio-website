@@ -19,10 +19,17 @@ nav {
         transition: 0.175s ease-out;
     }
 
-    h3:hover{
+    span {
+        position: relative;
+        display: inline-block;
+        transition: 0.175s ease-out;
+    }
+
+    span:hover{
         color: white;
         cursor: pointer;
         font-weight: 400;
+        transform: translate(5px, -2px);
     }
 }
 

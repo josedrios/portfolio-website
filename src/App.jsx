@@ -29,13 +29,45 @@ const projects = [
   },
 ]
 
+const faqContent = [
+  {
+    question: "What is the purpose of this platform?",
+    answer:   "The primary purpose of this platform is to connect users with resources and tools that help improve productivity, collaboration, and overall efficiency in their personal and professional lives. We offer a wide range of services, from project management tools to community-driven knowledge-sharing, all designed to support various industries and interests."
+  },
+  {
+    question: "How can I reset my password?",
+    answer:   "If you've forgotten your password or want to reset it, simply go to the login page and click on the 'Forgot Password?' link. You will be prompted to enter your registered email address, and we'll send you instructions on how to reset your password securely. Make sure to check your spam or junk folders if you don't see the email within a few minutes."
+  },
+  {
+    question: "What is the refund policy for premium memberships?",
+    answer:   "We offer a 30-day money-back guarantee for all premium memberships. If you're unsatisfied with the service during this period, you can request a full refund by contacting our support team. Beyond the 30-day window, refunds are generally not provided, but exceptions can be made in certain circumstances, such as technical issues or billing errors."
+  },
+  {
+    question: "How can I contact customer support?",
+    answer:   "You can reach our customer support team via multiple channels. For immediate assistance, you can use our live chat feature on the website during business hours. Alternatively, you can send an email to support@ourplatform.com, or call us at (123) 456-7890. We aim to respond to all queries within 24 hours on business days."
+  },
+  {
+    question: "Is my data secure on this platform?",
+    answer:   "We take data security very seriously. Our platform uses advanced encryption technologies to ensure that your data is protected both at rest and during transmission. We also regularly update our systems and undergo security audits to protect against unauthorized access and data breaches. Your privacy is our top priority."
+  },
+  {
+    question: "Can I upgrade my subscription plan at any time?",
+    answer:   "Yes, you can upgrade your subscription plan at any time from your account settings. Once upgraded, your new features will be available immediately, and your billing will be adjusted accordingly. If you're on a free plan, you'll only be charged once you confirm the upgrade, and the pricing will depend on the plan you choose."
+  },
+  {
+    question: "What integrations are available with this platform?",
+    answer:   "Our platform offers integrations with a wide variety of third-party services, including popular tools like Google Drive, Slack, Zoom, and Trello. These integrations are designed to streamline your workflow, allowing you to seamlessly collaborate, manage tasks, and share resources across platforms. You can manage integrations in your account settings."
+  }
+];
+
+
 function App() {
   const [mousePosition, setMousePosition] = React.useState({
       x: 0,
       y: -1000,
     }
   );
-  console.log(mousePosition);
+  // console.log(mousePosition);
 
   React.useEffect(() => {
     const mouseMove = e => {
@@ -155,7 +187,14 @@ function App() {
           </div>
           <div className='content-item'>
             <h1 className='content-item-header'>FAQ</h1>
-            <p className='content-item-body'>Script Like Structure</p>
+            <div id='faq-container'>
+              {faqContent.map((faqContent, index) => (
+                <div className="faq-pair" key={index}>
+                    <h1 className='question-header'>{faqContent.question}</h1>
+                    <div className='answer-header'>{faqContent.answer}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </main>
       </div>

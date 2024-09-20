@@ -5,7 +5,7 @@ import { faArrowRight, faArrowUpRightFromSquare, faBars, faCoffee, faCopy, faFil
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-const aboutMe = "Welcome to my website! This is a placeholder About Me paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the content here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase! -Written by AI"
+const aboutMe = "Welcome to my website! This is a placeholder About Me paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the content here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase!"
 // NOTE: When using bold text for a phrase, reference bold-text id (SASS)
 
 const projects = [

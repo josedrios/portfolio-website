@@ -83,6 +83,18 @@ function App() {
     }
   }, []);
 
+  const handleCopyText = () => {
+    const email = "josederios@outlook.com"
+
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        alert("COPIED TEXT");
+      })
+      .catch((err) => {
+        console.log("TEXT COPY ERROR: ",err)
+      })
+  }
+
   return (
     <>
       <div 
@@ -160,7 +172,7 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
-                  <div>
+                  <div onClick={handleCopyText}>
                     josederios@outlook.com
                     <FontAwesomeIcon className='icon' icon={faCopy} />
                   </div>
@@ -169,7 +181,7 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>LinkedIn: </div>
                 <div className="contact-item-content">
-                  <a href="">
+                  <a  href="https://www.linkedin.com/in/jose-rios-3b9505254/" target="_blank" rel="noopener noreferrer">
                     Jose Rios
                     <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
                   </a>
@@ -178,7 +190,7 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Github: </div>
                 <div className="contact-item-content">
-                  <a href="">
+                  <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">
                     josedrios
                     <FontAwesomeIcon id='contact-icon-external' className='icon' icon={faArrowUpRightFromSquare} />
                   </a>

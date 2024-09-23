@@ -143,8 +143,8 @@ function App() {
             {projects.map((project, index) => (
               <div className="project-item" key={index}>
                 <div className='project-header-container'>
-                  <h1 className="project-header">{project.title}</h1>
                   <a href="#" id='project-icon-container'>
+                    <h1 className="project-header">{project.title}</h1>
                     <FontAwesomeIcon className='icon' icon={faArrowRight} />
                   </a>
                 </div>

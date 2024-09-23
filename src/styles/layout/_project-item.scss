@@ -11,8 +11,12 @@
 }
 
 #project-icon-container{
-    display: inline-block;
+    display: flex;
     pointer-events: auto;
+    #project-header {
+        display: inline-block;
+        width: min-content;
+    }
     svg {
         height: 26px;
         padding-top: 3px;
@@ -22,8 +26,11 @@
 }
 
 #project-icon-container:hover {
+    .project-header {
+        color: white;
+    }
     svg {
-        transform: translateX(10px);
+        transform: translateX(12px);
     }
 }
 
@@ -37,9 +44,9 @@
 }
 
 .project-header{
+    color: rgb(236, 236, 236);
     font-size: 25px;
     font-weight: 450;
-    color: #F2F2F2;
 }
 
 .project-skills{

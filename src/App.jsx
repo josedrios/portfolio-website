@@ -95,6 +95,20 @@ function App() {
       })
   }
 
+  const handleScroll = (e,targetID) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetID);
+    const offset = 30;
+    const elementPosition = targetElement.offsetTop;
+    const offsetPosition = elementPosition - offset;
+
+    window.scroll({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+
+
   return (
     <>
       <div 
@@ -120,17 +134,17 @@ function App() {
               </a>
             </h3>
             <h3>
-              <a href="#project-section">
+              <a href="#project-section" onClick={(e) => handleScroll(e, 'project-section')}>
                 <span>02 Projects</span>
               </a>
             </h3>
             <h3>
-              <a href="#contact-item-container">
+              <a href="#contact-item-container" onClick={(e) => handleScroll(e, 'contact-item-container')}>
                 <span>03 Contact</span>
               </a>
             </h3>
             <h3>
-              <a href="#faq-section">
+              <a href="#faq-section" onClick={(e) => handleScroll(e, 'faq-section')}>
                 <span>04 FAQ</span>
               </a>
             </h3>

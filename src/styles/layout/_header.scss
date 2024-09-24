@@ -12,20 +12,20 @@
 }
 
 nav {
-    color: $unchosen-white;
     line-height: 45px;
     h3{
         @include add-font($header-font, 30px, 300);
         transition: 0.175s ease-out;
     }
 
-    span {
+    a {
+        color: $unchosen-white;
         position: relative;
         display: inline-block;
         transition: 0.175s ease-out;
     }
 
-    span:hover{
+    a:hover{
         color: white;
         cursor: pointer;
         font-weight: 400;

@@ -115,18 +115,24 @@ function App() {
           </div>
           <nav>
             <h3>
-              <span>
+              <a href="#content-container">
                 <span id='index-one' >01</span> About Me
-              </span>
+              </a>
             </h3>
             <h3>
-              <span>02 Projects</span>
+              <a href="#project-section">
+                <span>02 Projects</span>
+              </a>
             </h3>
             <h3>
-              <span>03 Contact</span>
+              <a href="#contact-item-container">
+                <span>03 Contact</span>
+              </a>
             </h3>
             <h3>
-              <span>04 FAQ</span>
+              <a href="#faq-section">
+                <span>04 FAQ</span>
+              </a>
             </h3>
           </nav>
           <div id='links-section'>
@@ -146,10 +152,10 @@ function App() {
         </header>
         <main id="content-container">
           <div className='content-item'>
-            <h1 className='content-item-header'>About Me</h1>
+            <h1 id='about-me' className='content-item-header'>About Me</h1>
             <p className='content-item-body'>{aboutMe}</p>
           </div>
-          <div className='content-item'>
+          <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
             <div className='content-item-body' id='project-item-container'>
             {projects.map((project, index) => (
@@ -168,7 +174,7 @@ function App() {
             </div>
           </div>
           <div className='content-item' id='contact-item-container'>
-            <h1 className='content-item-header'>Contact</h1>
+            <h1 id='contact-section' className='content-item-header'>Contact</h1>
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
@@ -197,7 +203,7 @@ function App() {
                 </div>
               </div>
           </div>
-          <div className='content-item'>
+          <div id='faq-section' className='content-item'>
             <h1 className='content-item-header'>FAQ</h1>
             <div id='faq-container'>
               {faqContent.map((faqContent, index) => (

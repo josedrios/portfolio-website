@@ -42,7 +42,6 @@ nav {
     justify-content: space-around;
     max-width: 400px;
     margin-right: 20px;
-    border-top: 0.1rem solid $unchosen-white;
     transition: border 0.175s ease;
     padding: 20px 15px;
     text-wrap: nowrap;
@@ -85,16 +84,7 @@ nav {
         margin: auto;
         max-width: 500px;
         padding: 20px 10px;
-    }
-}
-
-@media (max-width: 510px) {
-    #longname{
-        display: none;
-    }
-
-    #shortname{
-        display: block;
+        border-top: 0.1rem solid $unchosen-white;
     }
 }
 

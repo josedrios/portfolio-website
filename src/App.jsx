@@ -1,9 +1,10 @@
 import * as React from 'react';
 import './styles/main.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faBars, faCoffee, faCopy, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 
 const aboutMe = "Welcome to my website! This is a placeholder About Me paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the content here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase!"
 // NOTE: When using bold text for a phrase, reference bold-text id (SASS)
@@ -83,17 +84,22 @@ function App() {
     }
   }, []);
 
-  const handleCopyText = () => {
+
+  const handleCopyText = (hideID, showID) => {
     const email = "josederios@outlook.com"
+    const initialIcon = document.getElementById(hideID);
+    const check = document.getElementById(showID);
 
     navigator.clipboard.writeText(email)
       .then(() => {
-        alert("COPIED TEXT");
-      })
-      .catch((err) => {
-        console.log("TEXT COPY ERROR: ",err)
-      })
+            // ADD FADE OUT THEN IN FOR RESPECTIVE ICONS
+        })
+        .catch((err) => {
+            console.log("TEXT COPY ERROR:", err);
+        });
   }
+
+
 
   const handleScroll = (e,targetID) => {
     e.preventDefault();
@@ -124,7 +130,6 @@ function App() {
         <header id="header-container">
           <div>
             <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
-            <h1 class='fullname-title' id='shortname'>Jose D. Rios</h1>
             <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
           </div>
           <nav>
@@ -150,17 +155,17 @@ function App() {
             </h3>
           </nav>
           <div id='links-section'>
-            <a href="">
-              <FontAwesomeIcon className="icon" icon={faGithub} />
+            <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="icon" icon={faGithub} title='Github'/>
+            </a>
+            <a href="https://www.linkedin.com/in/jose-rios-3b9505254/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="icon" icon={faLinkedin} title='LinkedIn'/>
+            </a>
+            <a href="mailto:josederios@outlook.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="icon" id='envelope-icon' icon={faEnvelope} title='Email'/>
             </a>
             <a href="">
-              <FontAwesomeIcon className="icon" icon={faLinkedin} />
-            </a>
-            <a href="">
-              <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            </a>
-            <a href="">
-              <FontAwesomeIcon className="icon" icon={faFile} />
+              <FontAwesomeIcon className="icon" icon={faFile} title='Resume'/>
             </a>
           </div>
         </header>
@@ -192,9 +197,10 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
-                  <div onClick={handleCopyText}>
+                  <div onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
                     josederios@outlook.com
-                    <FontAwesomeIcon className='icon' icon={faCopy} />
+                    <FontAwesomeIcon className='icon' id='copy-icon-contact' icon={faClipboard} />
+                    <FontAwesomeIcon className="icon" id='check-icon-contact' icon={faClipboardCheck} title='Email'/>
                   </div>
                 </div>
               </div>

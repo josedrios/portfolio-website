@@ -28,6 +28,12 @@ main {
     z-index: 100;
 }
 
+@media(max-height: 450px){
+    nav {
+        display: none;
+    }
+}
+
 @media(max-width: 970px){
     #layout-container {
         flex-direction: column;

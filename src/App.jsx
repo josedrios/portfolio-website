@@ -68,7 +68,6 @@ function App() {
       y: -1000,
     }
   );
-  // console.log(mousePosition);
 
   React.useEffect(() => {
     const mouseMove = e => {
@@ -85,19 +84,27 @@ function App() {
   }, []);
 
 
-  const handleCopyText = (hideID, showID) => {
-    const email = "josederios@outlook.com"
-    const initialIcon = document.getElementById(hideID);
-    const check = document.getElementById(showID);
 
+  const handleCopyText = (hideID, showID) => {
+    const email = "josederios@outlook.com";
+    const initialIcon = document.getElementById(hideID);
+    const checkIcon = document.getElementById(showID);
+  
     navigator.clipboard.writeText(email)
       .then(() => {
-            // ADD FADE OUT THEN IN FOR RESPECTIVE ICONS
-        })
-        .catch((err) => {
-            console.log("TEXT COPY ERROR:", err);
-        });
-  }
+        initialIcon.style.opacity = "0";
+        checkIcon.style.opacity = "1";
+        setTimeout(() => {
+          initialIcon.style.opacity = "1";
+          checkIcon.style.opacity = "0"
+        }, 1000)
+      })
+      .catch((err) => {
+        console.log("TEXT COPY ERROR:", err);
+      });
+  };
+  
+  
 
 
 
@@ -113,6 +120,13 @@ function App() {
       behavior: 'smooth'
     })
   }
+
+  const handleMailTo = (event) => {
+    event.preventDefault();
+    window.location.href = 'mailto:josederios@outlook.com';
+  };
+
+
 
 
   return (
@@ -161,10 +175,11 @@ function App() {
             <a href="https://www.linkedin.com/in/jose-rios-3b9505254/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="icon" icon={faLinkedin} title='LinkedIn'/>
             </a>
-            <a href="mailto:josederios@outlook.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="icon" id='envelope-icon' icon={faEnvelope} title='Email'/>
+            <a onClick={handleMailTo} style={{ cursor: 'pointer' }}>
+              <FontAwesomeIcon className="icon" id="envelope-icon" icon={faEnvelope} title="Email" />
             </a>
-            <a href="">
+
+            <a>
               <FontAwesomeIcon className="icon" icon={faFile} title='Resume'/>
             </a>
           </div>
@@ -197,7 +212,7 @@ function App() {
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
-                  <div onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
+                  <div id='email-contact-container' onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
                     josederios@outlook.com
                     <FontAwesomeIcon className='icon' id='copy-icon-contact' icon={faClipboard} />
                     <FontAwesomeIcon className="icon" id='check-icon-contact' icon={faClipboardCheck} title='Email'/>

@@ -18,9 +18,24 @@
     margin-bottom: 7px;
 }
 
-#check-icon-contact {
-    display: none;
+#email-contact-container {
+    position: relative;
 }
+
+#copy-icon-contact {
+    position: absolute;
+    top: 4px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#check-icon-contact {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
 
 .contact-item-content {
     justify-content: end;

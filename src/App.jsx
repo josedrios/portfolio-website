@@ -249,6 +249,7 @@ function App() {
               ))}
             </div>
           </div>
+          <footer id="copyright-section">&copy; Jose Rios. All Rights Reserved</footer>
         </main>
       </div>
 

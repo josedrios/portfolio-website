@@ -1,12 +1,16 @@
 import * as React from 'react';
 import './styles/main.scss';
+import resume from './Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowUpRightFromSquare, faBars, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 
-const aboutMe = "Welcome to my website! This is a placeholder About Me paragraph created specifically for testing purposes. I'm currently tweaking the CSS, layout, and other design elements, so the content here is purely fictional. Imagine this space describing my hobbies, professional background, and passions—but for now, it's just text to see how everything looks and functions. Feel free to ignore this text as I continue to refine the overall look and feel of the site. Thanks for your patience during this testing phase!"
+const aboutMeP1 = "I am Jose and I build. At four years old  I would build with legos, at nine I would build with blocks in Minecraft, at fifteen I would build muscle through resistance training and at seventeen I would build a robot in the Robotics club."
+const aboutMeP2 = "After high school I would go down the STEM path to continue my pursing my enthusiasm and curiosity satiating act of building so I chose Computer Science. I would then immerse myself in the world of real-world issues versus code. "
+const aboutMeP3 = "I would then immerse myself in the world of real-world issues versus code. I found myself creating calculators for my physics classes, writing python scripts for my fathers temperature data from his bakery and leading a team of front end developers to create a marketplace web application. My obsession with building has only grown since programming and I am always eager to express my skills and excitement to the world."
+
 // NOTE: When using bold text for a phrase, reference bold-text id (SASS)
 
 const projects = [
@@ -83,8 +87,6 @@ function App() {
     }
   }, []);
 
-
-
   const handleCopyText = (hideID, showID) => {
     const email = "josederios@outlook.com";
     const initialIcon = document.getElementById(hideID);
@@ -104,10 +106,6 @@ function App() {
       });
   };
   
-  
-
-
-
   const handleScroll = (e,targetID) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetID);
@@ -125,9 +123,6 @@ function App() {
     event.preventDefault();
     window.location.href = 'mailto:josederios@outlook.com';
   };
-
-
-
 
   return (
     <>
@@ -178,16 +173,17 @@ function App() {
             <a onClick={handleMailTo} style={{ cursor: 'pointer' }}>
               <FontAwesomeIcon className="icon" id="envelope-icon" icon={faEnvelope} title="Email" />
             </a>
-
-            <a>
+            <a href={resume} download>
               <FontAwesomeIcon className="icon" icon={faFile} title='Resume'/>
             </a>
           </div>
         </header>
         <main id="content-container">
-          <div className='content-item'>
+          <div className='content-item' id='about-me-section'>
             <h1 id='about-me' className='content-item-header'>About Me</h1>
-            <p className='content-item-body'>{aboutMe}</p>
+            <p className='content-item-body'>{aboutMeP1}</p>
+            <p className='content-item-body'>{aboutMeP2}</p>
+            <p className='content-item-body'>{aboutMeP3}</p>
           </div>
           <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>

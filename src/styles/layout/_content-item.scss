@@ -12,11 +12,18 @@
     padding-bottom: 15px;
 }
 
+#about-me-section > * {
+   padding-bottom: 20px;
+}
+  
+#about-me-section > *:last-child {
+    padding-bottom: 35px;
+}
+
 .content-item-body{
     text-align: left;
-    font-size: 19px;
+    font-size: 17px;
     color: $unchosen-white;
-    padding-bottom: 35px;
 }
 
 .bold-section{

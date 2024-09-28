@@ -32,3 +32,8 @@ a {
     color: white;
     cursor: pointer;
 }
+
+::selection {
+    background-color: white; 
+    color: purple; 
+}

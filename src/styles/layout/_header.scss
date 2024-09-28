@@ -43,7 +43,7 @@ nav {
     max-width: 400px;
     margin-right: 20px;
     transition: border 0.175s ease;
-    padding: 20px 15px;
+    padding: 20px 15px 20px 0px;
     text-wrap: nowrap;
 
     a {
@@ -81,10 +81,8 @@ nav {
 
 @media (max-width: 970px){
     #links-section{
-        margin: auto;
-        max-width: 500px;
+        max-width: 355px;
         padding: 20px 10px;
-        border-top: 0.1rem solid $unchosen-white;
     }
 }
 
@@ -97,6 +95,12 @@ nav {
             }
         }
     }
-}
 
-// HIDE NAV BAR AT CERTAIN HEIGHT
+    #longname {
+        display: none;
+    }
+
+    #shortname {
+        display: inline;
+    }
+}

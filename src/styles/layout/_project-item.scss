@@ -56,3 +56,21 @@
 .project-summary{
     color: #A9A9A9;
 }
+
+#view-all-projects {
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+    font-family: $catalogue-font;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    transition: 0.15s;
+}
+
+#view-all-projects:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: difference;
+    cursor: pointer;
+}

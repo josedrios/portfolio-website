@@ -7,10 +7,7 @@ import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 
-const aboutMeP1 = "I am Jose and I build. At four years old  I would build with legos, at nine I would build with blocks in Minecraft, at fifteen I would build muscle through resistance training and at seventeen I would build a robot in the Robotics club."
-const aboutMeP2 = "After high school I would go down the STEM path to continue my pursing my enthusiasm and curiosity satiating act of building so I chose Computer Science. I would then immerse myself in the world of real-world issues versus code. "
-const aboutMeP3 = "I would then immerse myself in the world of real-world issues versus code. I found myself creating calculators for my physics classes, writing python scripts for my fathers temperature data from his bakery and leading a team of front end developers to create a marketplace web application. My obsession with building has only grown since programming and I am always eager to express my skills and excitement to the world."
-
+const aboutMe = "Hello, I am Jose and I enjoy building things that I can deliver to the real world. My obsession for programming began when I joined the Robotics Club in high school and was surrounded by intellectual, innovative minds with the same goal in mind, to build. This would ignite my desire to go down the computer science path and be a part of a field that constantly evolves and shapes the future. "
 // NOTE: When using bold text for a phrase, reference bold-text id (SASS)
 
 const projects = [
@@ -139,6 +136,7 @@ function App() {
         <header id="header-container">
           <div>
             <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
+            <h1 class='fullname-title' id='shortname'>Jose Rios</h1>
             <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
           </div>
           <nav>
@@ -181,9 +179,7 @@ function App() {
         <main id="content-container">
           <div className='content-item' id='about-me-section'>
             <h1 id='about-me' className='content-item-header'>About Me</h1>
-            <p className='content-item-body'>{aboutMeP1}</p>
-            <p className='content-item-body'>{aboutMeP2}</p>
-            <p className='content-item-body'>{aboutMeP3}</p>
+            <p className='content-item-body'>{aboutMe}</p>
           </div>
           <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
@@ -203,13 +199,14 @@ function App() {
             ))}
             </div>
           </div>
+          <button id='view-all-projects'>View All Projects</button>
           <div className='content-item' id='contact-item-container'>
             <h1 id='contact-section' className='content-item-header'>Contact</h1>
               <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
                   <div id='email-contact-container' onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
-                    josederios@outlook.com
+                    josederios<br id="responsive-email-snap"/>@outlook.com
                     <FontAwesomeIcon className='icon' id='copy-icon-contact' icon={faClipboard} />
                     <FontAwesomeIcon className="icon" id='check-icon-contact' icon={faClipboardCheck} title='Email'/>
                   </div>

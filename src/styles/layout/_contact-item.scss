@@ -34,9 +34,6 @@
     transition: opacity 0.3s ease;
 }
 
-
-
-
 .contact-item-content {
     justify-content: end;
     color: $unchosen-white;
@@ -73,3 +70,12 @@
     }
 }
 
+#responsive-email-snap {
+    display: none;
+}
+
+@media(max-width: 275px) {
+    #responsive-email-snap {
+        display: inline;
+    }
+}

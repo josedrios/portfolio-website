@@ -70,6 +70,8 @@ function App() {
     }
   );
 
+  const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
+
   React.useEffect(() => {
     const mouseMove = e => {
       setMousePosition({
@@ -120,6 +122,16 @@ function App() {
     event.preventDefault();
     window.location.href = 'mailto:josederios@outlook.com';
   };
+
+  const openOverlay = () => {
+    setOverlayVisibility(true);
+    document.body.style.overflow = 'hidden';
+  }
+
+  const closeOverlay = () => {
+    document.body.style.overflow = '';
+    setOverlayVisibility(false);
+  }
 
   return (
     <>
@@ -199,7 +211,10 @@ function App() {
             ))}
             </div>
           </div>
-          <button id='view-all-projects'>View All Projects</button>
+          <button id='view-all-projects' onClick={openOverlay}>View All Projects</button>
+          <div id='project-overlay' className={`${isOverlayVisible ? '' : 'hide-overlay'}`}>
+            <button id='view-all-projects' onClick={closeOverlay}>Close Overlay</button>
+          </div>
           <div className='content-item' id='contact-item-container'>
             <h1 id='contact-section' className='content-item-header'>Contact</h1>
               <div className="contact-info-item">

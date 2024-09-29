@@ -100,6 +100,144 @@ const projects = [
     skills: "C++, OpenGL, Game Development",
     date: "August 2008",
     summary: "Castle Crashers is a co-op beat 'em up game known for its vibrant hand-drawn art style, humorous tone, and addictive gameplay. Players battle their way through colorful levels, upgrading their characters, and taking on unique bosses. Its simple yet engaging mechanics, combined with a lighthearted art style, make Castle Crashers a fun and timeless multiplayer experience"
+  },
+  {
+    title: "Demon's Souls",
+    skills: "Java, Spring Boot, SQL",
+    date: "February 2009",
+    summary: "Demon’s Souls is the game that laid the groundwork for FromSoftware’s renowned 'Souls' series. Known for its punishing difficulty, deep combat mechanics, and atmospheric world, the game introduced players to a challenging experience filled with strategic battles and intricate level design. Its influence can be seen in the entire Soulsborne genre that followed."
+  },
+  {
+    title: "Dark Souls",
+    skills: "C++, Unreal Engine, OpenGL",
+    date: "September 2011",
+    summary: "Dark Souls is celebrated for its unforgiving gameplay, intricate world-building, and deep lore. Players navigate a dark, interconnected world filled with challenging enemies and complex combat mechanics. Its focus on exploration, player choice, and the high risk-reward combat system set the standard for modern action RPGs."
+  },
+  {
+    title: "Dark Souls II",
+    skills: "JavaScript, React, Node.js",
+    date: "March 2014",
+    summary: "Dark Souls II continues the series' tradition of difficult combat, obscure lore, and immersive environments. The game is known for its flexible build system, variety of weapons, and challenging boss fights. While it deviated slightly in design philosophy, it remains a core part of the Souls series with memorable locations and enemies."
+  },
+  {
+    title: "Dark Souls III",
+    skills: "Python, Flask, SQLAlchemy",
+    date: "March 2016",
+    summary: "Dark Souls III is the final chapter in the Dark Souls trilogy, combining elements from its predecessors with faster gameplay and refined mechanics. The game’s interconnected world, atmospheric storytelling, and intense combat are complemented by stunning visuals and a haunting score, making it a fitting conclusion to the series."
+  },
+  {
+    title: "Bloodborne",
+    skills: "Ruby, Rails, PostgreSQL",
+    date: "March 2015",
+    summary: "Bloodborne is set in a dark, Gothic world where players hunt nightmarish creatures. Known for its fast-paced combat and aggressive playstyle, the game stands out with its unique setting and Lovecraftian themes. Its atmospheric design, complex lore, and intense difficulty have made it a beloved classic among fans."
+  },
+  {
+    title: "Sekiro: Shadows Die Twice",
+    skills: "C#, Unity, Game Design",
+    date: "March 2019",
+    summary: "Sekiro: Shadows Die Twice offers a departure from traditional Souls games with its focus on precision combat and stealth. Set in a reimagined Sengoku-era Japan, players take on the role of a shinobi battling powerful foes. The game is known for its challenging parry system, unique resurrection mechanic, and rewarding boss battles."
+  },
+  {
+    title: "Halo: Reach",
+    skills: "C++, DirectX, Network Programming",
+    date: "September 2010",
+    summary: "Halo: Reach is a prequel to the original Halo series, showcasing the fall of the planet Reach through the eyes of Noble Team. Known for its engaging campaign, refined multiplayer modes, and deep customization options, Reach is celebrated for its emotional storytelling and polished gameplay, marking a high point in the Halo franchise."
+  },
+  {
+    title: "Red Dead Redemption",
+    skills: "C#, Unreal Engine, Game Physics",
+    date: "May 2010",
+    summary: "Red Dead Redemption is an open-world action-adventure game set in the dying days of the American frontier. Players control former outlaw John Marston as he seeks to bring justice to his past. Known for its immersive world, compelling story, and deep characters, Red Dead Redemption is widely considered one of the greatest games of all time."
+  },
+  {
+    title: "Red Dead Redemption 2",
+    skills: "Python, Flask, SQLAlchemy",
+    date: "October 2018",
+    summary: "Red Dead Redemption 2 is a prequel to the first game, following Arthur Morgan, a member of the Van der Linde gang. With its stunning open world, rich storytelling, and intricate character development, RDR2 sets a new benchmark for realism and narrative depth in gaming, offering a profound look at the outlaw lifestyle."
+  },
+  {
+    title: "The Last of Us",
+    skills: "JavaScript, React, Node.js",
+    date: "June 2013",
+    summary: "The Last of Us is a post-apocalyptic action-adventure game following Joel and Ellie as they navigate a world ravaged by a fungal infection. Praised for its gripping story, deep character development, and emotional impact, it’s considered one of the best narrative-driven games ever made, blending stealth, combat, and exploration."
+  },
+  {
+    title: "The Last of Us Part II",
+    skills: "TypeScript, Redux, Express.js",
+    date: "June 2020",
+    summary: "The Last of Us Part II continues Ellie’s journey, delivering an emotionally intense story of revenge, love, and loss. With improved gameplay mechanics, stunning graphics, and a complex narrative that challenges players' perspectives, it pushes the boundaries of storytelling in video games, cementing its place as a modern classic."
+  },
+  {
+    title: "Fullmetal Alchemist: Brotherhood",
+    skills: "Alchemy, Adventure, Action, Fantasy",
+    date: "April 2009",
+    summary: "Fullmetal Alchemist: Brotherhood is highly praised for its deep plot, memorable characters, and moral complexities. It follows the Elric brothers on a quest to restore their bodies using alchemy, blending action with emotional storytelling and philosophical themes about sacrifice and human nature."
+  },
+  {
+    title: "Steins;Gate",
+    skills: "Time Travel, Sci-Fi, Thriller, Mystery",
+    date: "April 2011",
+    summary: "Steins;Gate combines mind-bending time travel with intense character development and suspenseful storytelling. It uniquely handles the consequences of altering timelines, creating an engaging and emotional experience with plenty of twists and turns."
+  },
+  {
+    title: "Cowboy Bebop",
+    skills: "Space Western, Action, Adventure, Drama",
+    date: "April 1998",
+    summary: "Cowboy Bebop is celebrated for its stylish blend of genres, memorable characters, and jazz-infused soundtrack. The show follows a group of bounty hunters in space, exploring deep themes like loneliness and redemption with a unique, melancholic vibe."
+  },
+  {
+    title: "Bleach",
+    skills: "Supernatural, Action, Shinigami, Adventure",
+    date: "October 2004",
+    summary: "Bleach is known for its extensive universe, dynamic fight scenes, and an intriguing mix of samurai and supernatural elements. Following Ichigo Kurosaki as he takes on the responsibilities of a Soul Reaper, it balances intense battles with character growth."
+  },
+  {
+    title: "JoJo's Bizarre Adventure",
+    skills: "Action, Adventure, Supernatural, Fantasy",
+    date: "October 2012",
+    summary: "JoJo's Bizarre Adventure stands out for its unique art style, creative combat strategies, and a multigenerational story filled with eccentric characters. Its mix of supernatural powers, humor, and bizarre storytelling makes it a cult favorite."
+  },
+  {
+    title: "Your Lie in April",
+    skills: "Music, Drama, Romance, Slice of Life",
+    date: "October 2014",
+    summary: "Your Lie in April beautifully combines music with an emotional narrative about love, loss, and personal growth. Its stunning animation and moving soundtrack elevate the story of a piano prodigy overcoming his past traumas with the help of a spirited violinist."
+  },
+  {
+    title: "Mob Psycho 100",
+    skills: "Supernatural, Action, Comedy, Psychological",
+    date: "July 2016",
+    summary: "Mob Psycho 100 combines stunning animation, unique storytelling, and deep character exploration. The show follows Mob, a powerful psychic trying to live a normal life, blending explosive action with heartfelt moments about self-acceptance and personal growth."
+  },
+  {
+    title: "Samurai Champloo",
+    skills: "Action, Adventure, Samurai, Historical",
+    date: "May 2004",
+    summary: "Samurai Champloo blends historical samurai culture with modern elements like hip-hop music, creating a fresh and unique experience. Its dynamic fight scenes, likable characters, and episodic storytelling make it a standout anime that defies conventional tropes."
+  },
+  {
+    title: "Gurren Lagann",
+    skills: "Mecha, Action, Adventure, Sci-Fi",
+    date: "April 2007",
+    summary: "Gurren Lagann is renowned for its over-the-top action, inspirational themes, and larger-than-life battles. It tells the story of humanity's fight against oppressive forces with a message of limitless potential, making it both an epic and motivational journey."
+  },
+  {
+    title: "God of War (2005)",
+    skills: "C++, DirectX, Game Design",
+    date: "March 2005",
+    summary: "God of War (2005) is an action-adventure game that redefined the hack-and-slash genre with its intense combat, epic boss battles, and Greek mythology-inspired story. Players control Kratos, a Spartan warrior on a quest for revenge against the gods. Its engaging gameplay and cinematic presentation set a new standard for action games."
+  },
+  {
+    title: "God of War III",
+    skills: "Java, Spring Boot, JPA",
+    date: "March 2010",
+    summary: "God of War III is the epic conclusion to Kratos’ journey through Greek mythology, offering brutal combat, breathtaking set pieces, and stunning visuals. The game’s large-scale battles against gods and titans, combined with a satisfying combat system, make it a pinnacle of action-adventure gaming on the PlayStation 3."
+  },
+  {
+    title: "God of War (2018)",
+    skills: "Python, Django, GraphQL",
+    date: "April 2018",
+    summary: "God of War redefines the action-adventure genre with its gripping story, cinematic presentation, and brutal combat. Set in Norse mythology, the game follows Kratos and his son Atreus on a deeply personal journey. Its combination of stunning visuals, innovative gameplay, and emotional depth makes it a must-play PlayStation classic."
   }
 ]
 
@@ -291,8 +429,8 @@ function App() {
               <thead>
                 <tr>
                   <th>Project</th>
-                  <th>Date</th>
-                  <th>Skills</th>
+                  <th id='date-col'>Date</th>
+                  <th className='hide-overlay-col'>Skills</th>
                 </tr>
               </thead>
               <tbody>
@@ -304,7 +442,7 @@ function App() {
                       <FontAwesomeIcon icon={faArrowUpRightFromSquare}></FontAwesomeIcon>
                     </td>
                     <td className='td-middle'>{project.date}</td>
-                    <td className='td-middle'>{project.skills}</td>
+                    <td className='td-middle hide-overlay-col'>{project.skills}</td>
                   </tr>
                 ))}
               </tbody>

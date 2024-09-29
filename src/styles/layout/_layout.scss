@@ -12,7 +12,6 @@ header, main {
 }
 
 header {
-    border: 2px solid $header-border;
     padding: 60px 0px 30px 40px;
     justify-content: space-between;
     min-height: 200px;
@@ -23,7 +22,6 @@ header {
 
 main {
     padding: 60px 40px 60px 0px;
-    border: 2px solid $main-border;
     min-height: 100vh;
     z-index: 100;
 }

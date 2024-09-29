@@ -7,7 +7,6 @@
 
 html{
     color: $header-color;
-    // have back up fonts
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
@@ -35,5 +34,5 @@ a {
 
 ::selection {
     background-color: white; 
-    color: purple; 
+    color: $main-bg; 
 }

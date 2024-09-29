@@ -1,3 +1,5 @@
+
+$index: 10;
 .gradient-bubble {
   // Z-Index should be always kept aware of just incase
   // any visual complications arise
@@ -7,13 +9,5 @@
   height: var(--size);
   border-radius: 50%;
   filter: blur(calc(var(--size) / 2));
-  background-image: linear-gradient(hsl(276, 41%, 36%), hsl(3, 48%, 65%));
+  background-image: linear-gradient($inner-bubble, $outer-bubble);
 }
-  
-//  Make responsive adjustments later on (OPTIONAL)
-//   @media (max-width: 720px) {
-//     .gradient-bubble {
-//       --size: 30vh;
-//     }
-//   }
-  

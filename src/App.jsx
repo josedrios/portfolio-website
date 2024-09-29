@@ -2,7 +2,7 @@ import * as React from 'react';
 import './styles/main.scss';
 import resume from './Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare, faBars, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare, faBars, faCircleXmark, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile, faFileCircleXmark, faLink, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
@@ -14,21 +14,93 @@ const projects = [
   {
     title: "Lord of The Rings",
     skills: "React, JS, CSS, HTML",
-    date: "August 2024",
+    date: "July 1954",
     summary: "The Lord of the Rings is amazing because it masterfully combines epic storytelling with deep, immersive world-building. J.R.R. Tolkien created an entire universe, complete with its own history, languages, and cultures, making Middle-earth feel incredibly real and alive. The characters are rich and complex, from the bravery of Frodo and Sam to the wisdom of Gandalf and the redemption of Aragorn. The themes of friendship, sacrifice, and the struggle between good and evil resonate on a universal level. Its blend of adventure, myth, and human emotion makes it a timeless masterpiece that continues to inspire generations."
   },
   {
     title: "One Piece",
     skills: "C++, VMWare, VS Code",
-    date: "May 2022",
+    date: "July 1997",
     summary: "One Piece is amazing because it combines thrilling adventure, deep emotional storytelling, and a vast, richly detailed world. Eiichiro Oda masterfully balances humor, action, and drama as Monkey D. Luffy and his crew pursue their dreams across the seas. Each character is uniquely developed with their own compelling backstories and motivations, making the Straw Hat Pirates feel like a true family. The overarching themes of friendship, freedom, and perseverance resonate deeply with fans. With its intricate world-building, epic battles, and heartfelt moments, One Piece remains a beloved masterpiece in anime and manga."
   },
   {
     title: "Gears of War",
     skills: "Java, IntelliJ",
-    date: "Sept 2024",
+    date: "November 2006",
     summary: "Gears of War is amazing because it revolutionized the third-person shooter genre with its intense, cover-based combat system and gritty, cinematic storytelling. The game’s dark, post-apocalyptic setting, combined with visceral action, creates an immersive and adrenaline-pumping experience. The characters, like Marcus Fenix and Dom Santiago, are compelling and relatable, offering emotional depth amidst the chaos of war. The cooperative gameplay, whether in campaign or multiplayer modes, adds a strategic layer that makes teamwork crucial. Its iconic chainsaw gun and larger-than-life enemies make Gears of War a standout in gaming history."
   },
+  {
+    title: "Assassin's Creed 2",
+    skills: "Python, Django, SQL",
+    date: "November 2009",
+    summary: "Assassin’s Creed 2 is a standout in the series, praised for its rich narrative, engaging historical settings, and refined gameplay mechanics. Players follow the story of Ezio Auditore as he navigates Renaissance Italy, seeking vengeance and unraveling a larger conspiracy. The game’s open-world design, parkour movement, and stealth-based combat were revolutionary, providing players with a sense of freedom and immersion. Its blend of action, exploration, and historical intrigue makes Assassin’s Creed 2 a beloved classic in gaming."
+  },
+  {
+    title: "Batman: Arkham Asylum",
+    skills: "JavaScript, Node.js, MongoDB",
+    date: "August 2009",
+    summary: "Batman: Arkham Asylum set a new standard for superhero games with its gripping narrative, atmospheric setting, and groundbreaking combat system. Players step into the boots of Batman as he faces off against his greatest foes within the confines of Gotham’s infamous asylum. The game’s fluid free-flow combat, detective elements, and immersive environment create a truly authentic Batman experience. Arkham Asylum’s blend of stealth, action, and storytelling makes it a defining entry in the superhero genre."
+  },
+  {
+    title: "Elden Ring",
+    skills: "React, Redux, TypeScript",
+    date: "February 2022",
+    summary: "Elden Ring is an expansive action RPG that combines FromSoftware’s signature challenging combat with an open-world setting. Co-created by Hidetaka Miyazaki and George R.R. Martin, the game offers a richly detailed world filled with lore, challenging enemies, and epic boss battles. Players explore vast landscapes, discover secrets, and customize their character in an experience that is both punishing and rewarding. Elden Ring’s deep narrative, engaging gameplay, and breathtaking design have solidified it as a modern masterpiece."
+  },
+  {
+    title: "Berserk",
+    skills: "C#, .NET, SQL Server",
+    date: "October 1989",
+    summary: "Berserk is a dark fantasy manga that is lauded for its complex characters, intricate plot, and brutally beautiful artwork. Created by Kentaro Miura, it follows Guts, a lone warrior with a tragic past, as he battles against monstrous foes and his own inner demons. The series explores themes of betrayal, revenge, and the struggle for freedom, all set against a backdrop of medieval warfare. Berserk’s intense storytelling and detailed world-building make it one of the most influential works in the dark fantasy genre."
+  },
+  {
+    title: "GTO (Great Teacher Onizuka)",
+    skills: "Ruby, Rails, PostgreSQL",
+    date: "June 1997",
+    summary: "Great Teacher Onizuka (GTO) is a beloved manga and anime that follows the unconventional teaching methods of Eikichi Onizuka, a former gang member turned high school teacher. With humor, heart, and a rebellious spirit, Onizuka tackles the challenges of education, helping his students overcome their personal struggles. GTO blends comedy, drama, and social commentary, making it a unique and inspirational story about growth, friendship, and the power of a good teacher."
+  },
+  {
+    title: "Call of Duty: Modern Warfare 3",
+    skills: "Unity, C#, Game Design",
+    date: "November 2011",
+    summary: "Modern Warfare 3 is a first-person shooter that delivers a high-octane, action-packed experience. As a direct continuation of the Modern Warfare series, the game offers an intense campaign, robust multiplayer, and engaging Spec Ops missions. The game’s tight mechanics, immersive storytelling, and iconic moments solidified it as a fan-favorite in the Call of Duty franchise."
+  },
+  {
+    title: "Hunter x Hunter",
+    skills: "HTML, CSS, JavaScript",
+    date: "March 1998",
+    summary: "Hunter x Hunter is a critically acclaimed anime and manga known for its complex characters, intricate plot, and inventive battles. Created by Yoshihiro Togashi, it follows Gon Freecss, a young boy searching for his father, a legendary Hunter. The series is renowned for its deep world-building, unique power system (Nen), and intense story arcs. Its exploration of themes like friendship, ambition, and morality has made Hunter x Hunter a standout in the shounen genre."
+  },
+  {
+    title: "Dr. Stone",
+    skills: "Python, Flask, Data Science",
+    date: "March 2017",
+    summary: "Dr. Stone is a unique shounen series that combines science, adventure, and survival. It follows Senku Ishigami, a brilliant scientist who wakes up in a world where humanity has been petrified for thousands of years. Using his knowledge of science, he embarks on a mission to rebuild civilization from scratch. The series is celebrated for its educational approach, innovative problem-solving, and compelling characters. Dr. Stone’s blend of humor, science, and adventure makes it a refreshing and inspiring story."
+  },
+  {
+    title: "Vagabond",
+    skills: "React, GraphQL, TypeScript",
+    date: "March 1999",
+    summary: "Vagabond is a critically acclaimed manga that reimagines the life of Musashi Miyamoto, one of Japan’s most famous swordsmen. Created by Takehiko Inoue, the series is known for its breathtaking artwork, deep philosophical themes, and intense character development. Vagabond explores the journey of a warrior seeking purpose and self-understanding, set against the backdrop of feudal Japan. Its blend of action, introspection, and historical detail makes it a standout in samurai storytelling."
+  },
+  {
+    title: "One Punch Man",
+    skills: "Angular, TypeScript, Node.js",
+    date: "June 2012",
+    summary: "One Punch Man is a satirical superhero anime and manga that follows Saitama, a hero who can defeat any opponent with a single punch. Despite his overwhelming strength, Saitama struggles with the mundane aspects of heroism and the lack of a true challenge. The series is celebrated for its humor, stunning action scenes, and subversion of superhero tropes. One Punch Man’s unique blend of comedy, action, and existential musings makes it a standout in the genre."
+  },
+  {
+    title: "Stray",
+    skills: "Unity, C#, Game Design",
+    date: "July 2022",
+    summary: "Stray is a unique adventure game where players control a stray cat navigating a neon-lit, dystopian city inhabited by robots. The game combines platforming, puzzle-solving, and stealth elements, creating an immersive experience that captures the curiosity and agility of a cat. Its atmospheric world, engaging gameplay, and emotional storytelling make Stray a standout indie title."
+  },
+  {
+    title: "Castle Crashers",
+    skills: "C++, OpenGL, Game Development",
+    date: "August 2008",
+    summary: "Castle Crashers is a co-op beat 'em up game known for its vibrant hand-drawn art style, humorous tone, and addictive gameplay. Players battle their way through colorful levels, upgrading their characters, and taking on unique bosses. Its simple yet engaging mechanics, combined with a lighthearted art style, make Castle Crashers a fun and timeless multiplayer experience"
+  }
 ]
 
 const faqContent = [
@@ -61,7 +133,6 @@ const faqContent = [
     answer:   "Our platform offers integrations with a wide variety of third-party services, including popular tools like Google Drive, Slack, Zoom, and Trello. These integrations are designed to streamline your workflow, allowing you to seamlessly collaborate, manage tasks, and share resources across platforms. You can manage integrations in your account settings."
   }
 ];
-
 
 function App() {
   const [mousePosition, setMousePosition] = React.useState({
@@ -196,7 +267,7 @@ function App() {
           <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
             <div className='content-item-body' id='project-item-container'>
-            {projects.map((project, index) => (
+            {projects.slice(0,5).map((project, index) => (
               <div className="project-item" key={index}>
                 <div className='project-header-container'>
                   <a href="#" id='project-icon-container'>
@@ -212,8 +283,32 @@ function App() {
             </div>
           </div>
           <button id='view-all-projects' onClick={openOverlay}>View All Projects</button>
-          <div id='project-overlay' className={`${isOverlayVisible ? '' : 'hide-overlay'}`}>
-            <button id='view-all-projects' onClick={closeOverlay}>Close Overlay</button>
+          <div id='project-overlay' className={`${isOverlayVisible ? 'slide' : 'hide-overlay'}`}>
+            <button id='close-overlay-button' onClick={closeOverlay}>
+              <FontAwesomeIcon className='icon' icon={faXmark} />
+            </button>
+            <table>
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Date</th>
+                  <th>Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                {projects.map((project,index) => (
+                  <tr key={index}>
+                    <td>
+                      {project.title}
+                      &nbsp;
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare}></FontAwesomeIcon>
+                    </td>
+                    <td className='td-middle'>{project.date}</td>
+                    <td className='td-middle'>{project.skills}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           <div className='content-item' id='contact-item-container'>
             <h1 id='contact-section' className='content-item-header'>Contact</h1>

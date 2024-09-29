@@ -1,14 +1,15 @@
 import * as React from 'react';
 import './styles/main.scss';
 import resume from './Resume.pdf'
+
+{/* Icon Imports */}
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowUpRightFromSquare, faBars, faCircleXmark, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile, faFileCircleXmark, faLink, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 
+{/* Text Variables/Objects */}
 const aboutMe = "Hello, I am Jose and I enjoy building things that I can deliver to the real world. My obsession for programming began when I joined the Robotics Club in high school and was surrounded by intellectual, innovative minds with the same goal in mind, to build. This would ignite my desire to go down the computer science path and be a part of a field that constantly evolves and shapes the future. "
-
 const projects = [
   {
     title: "Lord of The Rings",
@@ -239,7 +240,6 @@ const projects = [
     summary: "God of War redefines the action-adventure genre with its gripping story, cinematic presentation, and brutal combat. Set in Norse mythology, the game follows Kratos and his son Atreus on a deeply personal journey. Its combination of stunning visuals, innovative gameplay, and emotional depth makes it a must-play PlayStation classic."
   }
 ]
-
 const faqContent = [
   {
     question: "What is the purpose of this platform?",
@@ -272,14 +272,13 @@ const faqContent = [
 ];
 
 function App() {
+
+  {/* Cursor Tracking State/Function */}
   const [mousePosition, setMousePosition] = React.useState({
       x: 0,
       y: -1000,
     }
   );
-
-  const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
-
   React.useEffect(() => {
     const mouseMove = e => {
       setMousePosition({
@@ -294,6 +293,30 @@ function App() {
     }
   }, []);
 
+  {/* 'View All Projects' Overlay State/Functions */}
+  const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
+  const openOverlay = () => {
+    setOverlayVisibility(true);
+    document.body.style.overflow = 'hidden';
+  }
+  const closeOverlay = () => {
+    document.body.style.overflow = '';
+    setOverlayVisibility(false);
+  }
+  const handleScroll = (e,targetID) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetID);
+    const offset = 30;
+    const elementPosition = targetElement.offsetTop;
+    const offsetPosition = elementPosition - offset;
+
+    window.scroll({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+
+  {/* Text Copy Icon Acknowledgement Animation */}
   const handleCopyText = (hideID, showID) => {
     const email = "josederios@outlook.com";
     const initialIcon = document.getElementById(hideID);
@@ -312,37 +335,16 @@ function App() {
         console.log("TEXT COPY ERROR:", err);
       });
   };
-  
-  const handleScroll = (e,targetID) => {
-    e.preventDefault();
-    const targetElement = document.getElementById(targetID);
-    const offset = 30;
-    const elementPosition = targetElement.offsetTop;
-    const offsetPosition = elementPosition - offset;
 
-    window.scroll({
-      top: offsetPosition,
-      behavior: 'smooth'
-    })
-  }
-
+  {/* Mailto Function */}
   const handleMailTo = (event) => {
     event.preventDefault();
     window.location.href = 'mailto:josederios@outlook.com';
   };
 
-  const openOverlay = () => {
-    setOverlayVisibility(true);
-    document.body.style.overflow = 'hidden';
-  }
-
-  const closeOverlay = () => {
-    document.body.style.overflow = '';
-    setOverlayVisibility(false);
-  }
-
   return (
     <>
+      {/* Gradient Bubble Cursor */}
       <div 
         style={{
           position: 'fixed',
@@ -352,13 +354,18 @@ function App() {
         className="gradient-bubble"
       />
 
+      {/* Entire Website Layout */}
       <div id='layout-container'>
+
+        {/* Left Side of Website */}
         <header id="header-container">
           <div>
             <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
             <h1 class='fullname-title' id='shortname'>Jose Rios</h1>
             <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
           </div>
+
+          {/* Navigation */}
           <nav>
             <h3>
               <a href="#content-container">
@@ -381,6 +388,8 @@ function App() {
               </a>
             </h3>
           </nav>
+
+          {/* Row of Icon Links */}
           <div id='links-section'>
             <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon className="icon" icon={faGithub} title='Github'/>
@@ -396,11 +405,15 @@ function App() {
             </a>
           </div>
         </header>
+
+        {/* Right Side of Website */}
         <main id="content-container">
           <div className='content-item' id='about-me-section'>
             <h1 id='about-me' className='content-item-header'>About Me</h1>
             <p className='content-item-body'>{aboutMe}</p>
           </div>
+
+          {/* Project Populated Section */}
           <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
             <div className='content-item-body' id='project-item-container'>
@@ -419,6 +432,8 @@ function App() {
             ))}
             </div>
           </div>
+
+          {/* Project Overlay */}
           <button id='view-all-projects' onClick={openOverlay}>View All Projects</button>
           <div id='project-overlay' className={`${isOverlayVisible ? 'slide' : 'hide-overlay'}`}>
             <button id='close-overlay-button' onClick={closeOverlay}>
@@ -447,6 +462,8 @@ function App() {
               </tbody>
             </table>
           </div>
+
+          {/* Contact Populated Section */}
           <div className='content-item' id='contact-item-container'>
             <h1 id='contact-section' className='content-item-header'>Contact</h1>
               <div className="contact-info-item">
@@ -478,6 +495,8 @@ function App() {
                 </div>
               </div>
           </div>
+
+          {/* FAQ Populated Section */}
           <div id='faq-section' className='content-item'>
             <h1 className='content-item-header'>FAQ</h1>
             <div id='faq-container'>
@@ -489,6 +508,7 @@ function App() {
               ))}
             </div>
           </div>
+
           <footer id="copyright-section">&copy; Jose Rios. All Rights Reserved</footer>
         </main>
       </div>

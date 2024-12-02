@@ -1,12 +1,11 @@
 import * as React from 'react';
 import './styles/main.scss';
-import resume from './Resume.pdf'
+
+import Header from './Header';
 
 {/* Icon Imports */}
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowUpRightFromSquare, faBars, faCircleXmark, faClipboard, faClipboardCheck, faCoffee, faCopy, faFile, faFileCircleXmark, faLink, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faGit, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 {/* Text Variables/Objects */}
 const aboutMe = "Hello, I am Jose and I enjoy building things that I can deliver to the real world. My obsession for programming began when I joined the Robotics Club in high school and was surrounded by intellectual, innovative minds with the same goal in mind, to build. This would ignite my desire to go down the computer science path and be a part of a field that constantly evolves and shapes the future. "
@@ -358,53 +357,7 @@ function App() {
       <div id='layout-container'>
 
         {/* Left Side of Website */}
-        <header id="header-container">
-          <div>
-            <h1 class='fullname-title' id='longname'>Jose De Jesus Rios</h1>
-            <h1 class='fullname-title' id='shortname'>Jose Rios</h1>
-            <h2 id='job-title'>Web&nbsp;Developer & Software&nbsp;Engineer</h2>
-          </div>
-
-          {/* Navigation */}
-          <nav>
-            <h3>
-              <a href="#content-container">
-                <span id='index-one' >01</span> About Me
-              </a>
-            </h3>
-            <h3>
-              <a href="#project-section" onClick={(e) => handleScroll(e, 'project-section')}>
-                <span>02 Projects</span>
-              </a>
-            </h3>
-            <h3>
-              <a href="#contact-item-container" onClick={(e) => handleScroll(e, 'contact-item-container')}>
-                <span>03 Contact</span>
-              </a>
-            </h3>
-            <h3>
-              <a href="#faq-section" onClick={(e) => handleScroll(e, 'faq-section')}>
-                <span>04 FAQ</span>
-              </a>
-            </h3>
-          </nav>
-
-          {/* Row of Icon Links */}
-          <div id='links-section'>
-            <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="icon" icon={faGithub} title='Github'/>
-            </a>
-            <a href="https://www.linkedin.com/in/jose-rios-3b9505254/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="icon" icon={faLinkedin} title='LinkedIn'/>
-            </a>
-            <a onClick={handleMailTo} style={{ cursor: 'pointer' }}>
-              <FontAwesomeIcon className="icon" id="envelope-icon" icon={faEnvelope} title="Email" />
-            </a>
-            <a href={resume} download>
-              <FontAwesomeIcon className="icon" icon={faFile} title='Resume'/>
-            </a>
-          </div>
-        </header>
+        <Header handleScroll={handleScroll} handleMailTo={handleMailTo}/>
 
         {/* Right Side of Website */}
         <main id="content-container">

@@ -5,14 +5,24 @@ import ProjectOverlay from './ProjectOverlay';
 import Contact from './Contact';
 import FAQ from './FAQ';
 
-function Mainer({ isOverlayVisible, openOverlay, closeOverlay, handleCopyText}) {
+function Mainer() {
+    const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
+    const openOverlay = () => {
+        setOverlayVisibility(true);
+        document.body.style.overflow = 'hidden';
+    }
+    const closeOverlay = () => {
+        document.body.style.overflow = '';
+        setOverlayVisibility(false);
+    }
+
     return(
         <main id="content-container">
             <AboutMe/>
             <Projects/>
             <button id='view-all-projects' onClick={openOverlay}>View All Projects</button>
             <ProjectOverlay isOverlayVisible={isOverlayVisible} closeOverlay={closeOverlay}/>
-            <Contact handleCopyText={handleCopyText}/>
+            <Contact/>
             <FAQ/>
           <footer id="copyright-section">&copy; Jose Rios. All Rights Reserved</footer>
         </main>

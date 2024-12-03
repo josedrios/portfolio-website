@@ -5,7 +5,12 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-function LinkSection({handleMailTo}) {
+function LinkSection() {
+    const handleMailTo = (event) => {
+        event.preventDefault();
+        window.location.href = 'mailto:josederios@outlook.com';
+    };
+    
     return (
         <div id='links-section'>
             <a href="https://github.com/josedrios" target="_blank" rel="noopener noreferrer">

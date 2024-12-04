@@ -2,6 +2,7 @@ import * as React from 'react';
 import Info from './info.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function ProjectOverlay({isOverlayVisible, closeOverlay}) {
     return (
@@ -21,9 +22,9 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                 {Info.projects.map((project,index) => (
                     <tr key={index}>
                     <td>
-                        {project.title}
+                        <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                         &nbsp;
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare}></FontAwesomeIcon>
+                        {project.title}
                     </td>
                     <td className='td-middle'>{project.date}</td>
                     <td className='td-middle hide-overlay-col'>{project.skills}</td>

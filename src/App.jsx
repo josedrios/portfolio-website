@@ -53,7 +53,11 @@ function App() {
       <div id='layout-container'>
         <Header/>
         <Mainer isOverlayVisible={isOverlayVisible} openOverlay={openOverlay} closeOverlay={closeOverlay}/>
-        {isOverlayVisible && <div id='non-contactable-layer' onClick={() => closeOverlay()}/>}
+        <div 
+          id='non-contactable-layer' 
+          className={`${isOverlayVisible ? 'on' : ''}`} 
+          onClick={() => closeOverlay()}
+        />
       </div>
     </>
   )

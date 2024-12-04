@@ -5,17 +5,7 @@ import ProjectOverlay from './ProjectOverlay';
 import Contact from './Contact';
 import FAQ from './FAQ';
 
-function Mainer() {
-    const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
-    const openOverlay = () => {
-        setOverlayVisibility(true);
-        document.body.style.overflow = 'hidden';
-    }
-    const closeOverlay = () => {
-        document.body.style.overflow = '';
-        setOverlayVisibility(false);
-    }
-
+function Mainer({isOverlayVisible, openOverlay, closeOverlay}) {
     return(
         <main id="content-container">
             <AboutMe/>

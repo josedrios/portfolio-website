@@ -27,6 +27,17 @@ function App() {
     }
   }, []);
 
+  const [isOverlayVisible, setOverlayVisibility] = React.useState(false);
+
+  const openOverlay = () => {
+    setOverlayVisibility(true);
+    document.body.style.overflow = 'hidden';
+  }
+  const closeOverlay = () => {
+    document.body.style.overflow = '';
+    setOverlayVisibility(false);
+  }
+
   return (
     <>
       {/* Gradient Bubble Cursor */}
@@ -41,7 +52,8 @@ function App() {
       
       <div id='layout-container'>
         <Header/>
-        <Mainer/>
+        <Mainer isOverlayVisible={isOverlayVisible} openOverlay={openOverlay} closeOverlay={closeOverlay}/>
+        {isOverlayVisible && <div id='non-contactable-layer' onClick={() => closeOverlay()}/>}
       </div>
     </>
   )

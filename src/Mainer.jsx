@@ -14,7 +14,7 @@ function Mainer({isOverlayVisible, openOverlay, closeOverlay}) {
             <ProjectOverlay isOverlayVisible={isOverlayVisible} closeOverlay={closeOverlay}/>
             <Contact/>
             <FAQ/>
-          <footer id="copyright-section">&copy; Jose Rios. All Rights Reserved</footer>
+            <footer id="copyright-section">&copy; Jose Rios. All Rights Reserved</footer>
         </main>
     )
 } 

@@ -22,8 +22,10 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                 {Info.projects.map((project,index) => (
                     <tr key={index}>
                     <td>
-                        <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-                        &nbsp;
+                        <a>
+                            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                        </a>
+                        &nbsp;&nbsp;
                         {project.title}
                     </td>
                     <td className='td-middle'>{project.date}</td>

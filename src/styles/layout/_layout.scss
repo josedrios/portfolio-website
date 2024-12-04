@@ -6,12 +6,36 @@
 }
 
 header, main {
+    position: relative;
     width: 49%;
     display: flex;
     flex-direction: column;
 }
 
+@keyframes spawn-from-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+@keyframes spawn-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
 header {
+    animation: spawn-from-left 1s ease-out;
     padding: 60px 0px 30px 40px;
     justify-content: space-between;
     min-height: 200px;
@@ -21,6 +45,7 @@ header {
 }
 
 main {
+    animation: spawn-from-right 1s ease-out;
     padding: 60px 40px 60px 0px;
     min-height: 100vh;
     z-index: 100;

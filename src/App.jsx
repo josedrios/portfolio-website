@@ -3,6 +3,7 @@ import './styles/main.scss';
 
 import Header from './Header';
 import Mainer from './Mainer';
+import ProjectOverlay from './ProjectOverlay';
 
 function App() {
 
@@ -52,7 +53,8 @@ function App() {
       
       <div id='layout-container'>
         <Header/>
-        <Mainer isOverlayVisible={isOverlayVisible} openOverlay={openOverlay} closeOverlay={closeOverlay}/>
+        <Mainer openOverlay={openOverlay}/>
+        <ProjectOverlay isOverlayVisible={isOverlayVisible} closeOverlay={closeOverlay}/>
         <div 
           id='non-contactable-layer' 
           className={`${isOverlayVisible ? 'on' : ''}`} 

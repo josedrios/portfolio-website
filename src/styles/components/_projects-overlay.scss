@@ -96,5 +96,6 @@ table tr:not(:last-child) {
 #non-contactable-layer.on {
     visibility: visible;
     opacity: 1;
+    z-index: 999;
     transition: opacity 1s ease, visibility 1s ease;
 }

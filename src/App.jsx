@@ -53,7 +53,7 @@ function App() {
       
       <div id='layout-container'>
         <Header/>
-        <Mainer openOverlay={openOverlay}/>
+        <Mainer openOverlay={openOverlay} />
         <ProjectOverlay isOverlayVisible={isOverlayVisible} closeOverlay={closeOverlay}/>
         <div 
           id='non-contactable-layer' 

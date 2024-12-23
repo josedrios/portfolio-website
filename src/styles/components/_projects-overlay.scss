@@ -52,17 +52,21 @@
     cursor: pointer;
 }
 
+// DELETE
+
 table {
     border-collapse: collapse;
+}
+
+.project-row:hover {
+    background-color: black;
 }
 
 thead {
     border-bottom: 1px solid white;
 }
 
-td:nth-child(2) {
-    padding-right: 30px;
-}
+
 
 th, td {
     text-align: start;
@@ -71,9 +75,23 @@ th, td {
     height: 40px;
 }
 
+td {
+    border: 1px solid purple;
+}
+
+td > a {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid blue;
+    height: 40px;
+    background-color: red;
+}
+
 table tr:not(:last-child) {
     border-bottom: 1px solid #ffffff4b;
 }
+
+// DELETE
 
 @media(max-width: 900px){
     .hide-overlay-col {

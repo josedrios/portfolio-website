@@ -2,7 +2,6 @@ import * as React from 'react';
 import Info from './info.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function ProjectOverlay({isOverlayVisible, closeOverlay}) {
     return (
@@ -20,16 +19,16 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                 </thead>
                 <tbody>
                 {Info.projects.map((project,index) => (
-                    <tr key={index}>
-                    <td>
-                        <a>
-                            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-                        </a>
-                        &nbsp;&nbsp;
-                        {project.title}
-                    </td>
-                    <td className='td-middle'>{project.date}</td>
-                    <td className='td-middle hide-overlay-col'>{project.skills}</td>
+                    <tr className='project-row' key={index}>
+                        <td>
+                            <a className='project-row-link' href="https://www.google.com/">{project.title}</a>
+                        </td>
+                        <td className='td-middle'>
+                            <a href="https://www.google.com/">{project.date}</a>
+                        </td>
+                        <td className='td-middle hide-overlay-col'>
+                            <a href="https://www.google.com/">{project.skills}</a>
+                        </td>
                     </tr>
                 ))}
                 </tbody>

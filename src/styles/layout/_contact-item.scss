@@ -1,81 +1,83 @@
-#contact-item-container{
-    margin-bottom: 30px;
+#contact-item-container {
+  margin-bottom: 30px;
 }
 
 .contact-info-item {
-    font-size: 19px;
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    width: min-content;
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: min-content;
+  &:not(:last-child) {
+    margin-bottom: 25px;
   }
+}
 
 .contact-item-header {
-    color: white;
-    margin-bottom: 7px;
+  color: white;
+  margin-bottom: 7px;
 }
 
 #email-contact-container {
-    position: relative;
+  position: relative;
 }
 
 #copy-icon-contact {
-    position: absolute;
-    top: 4px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 4px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 #check-icon-contact {
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .contact-item-content {
-    justify-content: end;
+  justify-content: end;
+  color: $unchosen-white;
+  display: flex;
+  text-wrap: nowrap;
+  flex-wrap: nowrap;
+  transition: 0.15s ease-in;
+  a {
     color: $unchosen-white;
-    display: flex;
-    text-wrap: nowrap;
-    flex-wrap: nowrap;
     transition: 0.15s ease-in;
-    a {
-        color: $unchosen-white;
-        transition: 0.15s ease-in;
-    }
+  }
 
-    .icon {
-        color: $unchosen-white;
-        margin: 0px 10px;
-        font-size: 17px;
-        transition: 0.15s ease-in;
-    }
+  .icon {
+    color: $unchosen-white;
+    margin: 0px 10px;
+    font-size: 17px;
+    transition: 0.15s ease-in;
+  }
 
-    #contact-icon-external {
-        font-size: 15px
-    }
+  #contact-icon-external {
+    font-size: 15px;
+  }
 }
 
-.contact-item-content:hover {
+@media (hover: hover) and (pointer: fine) {
+  .contact-item-content:hover {
     cursor: pointer;
     color: white;
     a {
-        color: white;
+      color: white;
     }
 
     .icon {
-        color: white;
+      color: white;
     }
+  }
 }
 
 #responsive-email-snap {
-    display: none;
+  display: none;
 }
 
-@media(max-width: 275px) {
-    #responsive-email-snap {
-        display: inline;
-    }
+@media (max-width: 275px) {
+  #responsive-email-snap {
+    display: inline;
+  }
 }

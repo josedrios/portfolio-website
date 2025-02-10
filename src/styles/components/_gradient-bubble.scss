@@ -1,8 +1,4 @@
-
-$index: 10;
 .gradient-bubble {
-  // Z-Index should be always kept aware of just incase
-  // any visual complications arise
   z-index: -100;
   --size: #{$gradient-bubble-diameter};
   width: var(--size);
@@ -10,4 +6,10 @@ $index: 10;
   border-radius: 50%;
   filter: blur(calc(var(--size) / 2));
   background-image: linear-gradient($inner-bubble, $outer-bubble);
+}
+
+@media (hover: none) {
+  .hide-on-touch {
+    display: none;
+  }
 }

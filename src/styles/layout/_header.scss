@@ -24,13 +24,6 @@ nav {
         display: inline-block;
         transition: 0.175s ease-out;
     }
-
-    a:hover{
-        color: white;
-        cursor: pointer;
-        font-weight: 400;
-        transform: translate(5px, -2px);
-    }
 }
 
 #index-one{
@@ -54,13 +47,26 @@ nav {
     svg {
         transition: 0.15s ease-out;
     }
+}
 
-    a:hover {
-        color: white;
+@media (hover:hover) and (pointer: fine) {
+    nav {
+        a:hover{
+            color: white;
+            cursor: pointer;
+            font-weight: 400;
+            transform: translate(5px, -2px);
+        }
+    }
 
-        svg {
-            transform: scale(1.2);
-
+    #links-section {
+        a:hover {
+            color: white;
+    
+            svg {
+                transform: scale(1.2);
+    
+            }
         }
     }
 }

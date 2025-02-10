@@ -28,10 +28,10 @@ function Contact () {
             <div className="contact-info-item">
                 <div className='contact-item-header'>Email: </div>
                 <div className="contact-item-content">
-                  <div id='email-contact-container' onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
+                  <div id='email-contact-container' onClick={() => handleCopyText('copy-icon-contact', 'check-icon-contact')} onTouchStart={() => handleCopyText('copy-icon-contact', 'check-icon-contact')}>
                     josederios<br id="responsive-email-snap"/>@outlook.com
-                    <FontAwesomeIcon className='icon' id='copy-icon-contact' icon={faClipboard} />
-                    <FontAwesomeIcon className="icon" id='check-icon-contact' icon={faClipboardCheck} title='Email'/>
+                    <FontAwesomeIcon className='icon hide-on-touch' id='copy-icon-contact' icon={faClipboard} />
+                    <FontAwesomeIcon className="icon hide-on-touch" id='check-icon-contact' icon={faClipboardCheck} title='Email'/>
                   </div>
                 </div>
               </div>

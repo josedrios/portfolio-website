@@ -2,64 +2,74 @@
     "aboutme": "Hello, I am Jose and I enjoy building things that I can deliver to the real world. My obsession for programming began when I joined the Robotics Club in high school and was surrounded by intellectual, innovative thinkers with the same goal in mind, to build. This would ignite my desire to go down the computer science path and be a part of a field that constantly evolves and shapes the future. ",
     "projects": [
         {
-        "title": "Lord of The Rings",
-        "skills": "React, JS, CSS, HTML",
-        "date": "July 1954",
-        "summary": "The Lord of the Rings combines epic storytelling, rich characters, and immersive world-building, creating a timeless masterpiece that resonates with universal themes of friendship and the battle between good and evil."
+            "title": "Lord of The Rings",
+            "skills": "React, JS, CSS, HTML",
+            "date": "July 1954",
+            "summary": "The Lord of the Rings combines epic storytelling, rich characters, and immersive world-building, creating a timeless masterpiece that resonates with universal themes of friendship and the battle between good and evil.",
+            "link": "https://www.example.com/lotr"
         },
         {
-        "title": "One Piece",
-        "skills": "C++, VMWare, VS Code",
-        "date": "July 1997",
-        "summary": "One Piece masterfully blends adventure, humor, and emotional depth as Luffy and his crew pursue dreams, tackling themes of friendship, freedom, and perseverance in a richly detailed world."
+            "title": "One Piece",
+            "skills": "C++, VMWare, VS Code",
+            "date": "July 1997",
+            "summary": "One Piece masterfully blends adventure, humor, and emotional depth as Luffy and his crew pursue dreams, tackling themes of friendship, freedom, and perseverance in a richly detailed world.",
+            "link": "https://www.example.com/one-piece"
         },
         {
-        "title": "Gears of War",
-        "skills": "Java, IntelliJ",
-        "date": "November 2006",
-        "summary": "Gears of War revolutionized third-person shooters with its intense combat, gritty setting, and compelling characters, offering an iconic and immersive experience."
+            "title": "Gears of War",
+            "skills": "Java, IntelliJ",
+            "date": "November 2006",
+            "summary": "Gears of War revolutionized third-person shooters with its intense combat, gritty setting, and compelling characters, offering an iconic and immersive experience.",
+            "link": "https://www.example.com/gears-of-war"
         },
         {
-        "title": "Assassin's Creed 2",
-        "skills": "Python, Django, SQL",
-        "date": "November 2009",
-        "summary": "Assassin’s Creed 2 excels with its engaging story, Renaissance setting, and innovative gameplay, making it a standout in the franchise."
+            "title": "Assassin's Creed 2",
+            "skills": "Python, Django, SQL",
+            "date": "November 2009",
+            "summary": "Assassin’s Creed 2 excels with its engaging story, Renaissance setting, and innovative gameplay, making it a standout in the franchise.",
+            "link": "https://www.example.com/assassins-creed-2"
         },
         {
-        "title": "Batman: Arkham Asylum",
-        "skills": "JavaScript, Node.js, MongoDB",
-        "date": "August 2009",
-        "summary": "Arkham Asylum delivers gripping storytelling, fluid combat, and an immersive Batman experience, setting new standards for superhero games."
+            "title": "Batman: Arkham Asylum",
+            "skills": "JavaScript, Node.js, MongoDB",
+            "date": "August 2009",
+            "summary": "Arkham Asylum delivers gripping storytelling, fluid combat, and an immersive Batman experience, setting new standards for superhero games.",
+            "link": "https://www.example.com/batman-arkham-asylum"
         },
         {
-        "title": "Elden Ring",
-        "skills": "React, Redux, TypeScript",
-        "date": "February 2022",
-        "summary": "Elden Ring combines challenging combat with open-world exploration, offering deep lore, epic battles, and breathtaking design."
+            "title": "Elden Ring",
+            "skills": "React, Redux, TypeScript",
+            "date": "February 2022",
+            "summary": "Elden Ring combines challenging combat with open-world exploration, offering deep lore, epic battles, and breathtaking design.",
+            "link": "https://www.example.com/elden-ring"
         },
         {
-        "title": "Berserk",
-        "skills": "C#, .NET, SQL Server",
-        "date": "October 1989",
-        "summary": "Berserk is a dark fantasy masterpiece, exploring themes of betrayal and revenge with complex characters and a detailed world."
+            "title": "Berserk",
+            "skills": "C#, .NET, SQL Server",
+            "date": "October 1989",
+            "summary": "Berserk is a dark fantasy masterpiece, exploring themes of betrayal and revenge with complex characters and a detailed world.",
+            "link": "https://www.example.com/berserk"
         },
         {
-        "title": "GTO (Great Teacher Onizuka)",
-        "skills": "Ruby, Rails, PostgreSQL",
-        "date": "June 1997",
-        "summary": "GTO blends comedy, drama, and inspiration as Onizuka uses unconventional methods to help students overcome struggles."
+            "title": "GTO (Great Teacher Onizuka)",
+            "skills": "Ruby, Rails, PostgreSQL",
+            "date": "June 1997",
+            "summary": "GTO blends comedy, drama, and inspiration as Onizuka uses unconventional methods to help students overcome struggles.",
+            "link": "https://www.example.com/gto"
         },
         {
-        "title": "Call of Duty: Modern Warfare 3",
-        "skills": "Unity, C#, Game Design",
-        "date": "November 2011",
-        "summary": "Modern Warfare 3 delivers intense action, engaging multiplayer, and iconic moments, cementing its place in the franchise."
+            "title": "Call of Duty: Modern Warfare 3",
+            "skills": "Unity, C#, Game Design",
+            "date": "November 2011",
+            "summary": "Modern Warfare 3 delivers intense action, engaging multiplayer, and iconic moments, cementing its place in the franchise.",
+            "link": "https://www.example.com/modern-warfare-3"
         },
         {
-        "title": "Hunter x Hunter",
-        "skills": "HTML, CSS, JavaScript",
-        "date": "March 1998",
-        "summary": "Hunter x Hunter captivates with its complex characters, inventive battles, and exploration of themes like friendship and ambition."
+            "title": "Hunter x Hunter",
+            "skills": "HTML, CSS, JavaScript",
+            "date": "March 1998",
+            "summary": "Hunter x Hunter captivates with its complex characters, inventive battles, and exploration of themes like friendship and ambition.",
+            "link": "https://www.example.com/hunter-x-hunter"
         }
     ],
     "faqContent": [

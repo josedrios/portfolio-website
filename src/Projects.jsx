@@ -8,13 +8,13 @@ function Projects() {
         <div id='project-section' className='content-item'>
             <h1 className='content-item-header' id='project-content-header'>Projects</h1>
             <div className='content-item-body' id='project-item-container'>
-                {Info.projects.slice(0,5).map((project, index) => (
+                {Info.projects.slice(0,4).map((project, index) => (
                     <div className="project-item" key={index}>
-                    <div className='project-header-container'>
-                        <a href="#" id='project-icon-container'>
-                            <h1 className="project-header">{project.title}</h1>
-                            <FontAwesomeIcon className='icon' icon={faArrowRight} />
-                        </a>
+                        <div className='project-header-container'>
+                            <a href={project.link} id='project-icon-container' target="_blank" rel="noopener noreferrer">
+                                <h1 className="project-header">{project.title}</h1>
+                                <FontAwesomeIcon className='icon' icon={faArrowRight} />
+                            </a>
                         </div>
                         <p className="project-date">{project.date}</p>
                         <p className="project-skills">Skills: {project.skills}</p>

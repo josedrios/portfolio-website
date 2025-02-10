@@ -41,14 +41,13 @@ function App() {
 
   return (
     <>
-      {/* Gradient Bubble Cursor */}
       <div 
         style={{
           position: 'fixed',
           left: `${mousePosition.x - 200}px`,
           top: `${mousePosition.y - 200}px`,
         }} 
-        className="gradient-bubble"
+        className="gradient-bubble hide-on-touch"
       />
       
       <div id='layout-container'>

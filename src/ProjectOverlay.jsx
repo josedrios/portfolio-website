@@ -21,13 +21,19 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                 {Info.projects.map((project,index) => (
                     <tr className='project-row' key={index}>
                         <td>
-                            <a className='project-row-link' href="https://www.google.com/">{project.title}</a>
+                            <a className='project-row-link' href={project.link} target="_blank" rel="noopener noreferrer">
+                                &nbsp;{project.title}
+                            </a>
                         </td>
                         <td className='td-middle'>
-                            <a href="https://www.google.com/">{project.date}</a>
+                            <a className='project-row-link' href={project.link} target="_blank" rel="noopener noreferrer">
+                                {project.date}
+                            </a>
                         </td>
                         <td className='td-middle hide-overlay-col'>
-                            <a href="https://www.google.com/">{project.skills}</a>
+                            <a className='project-row-link' href={project.link} target="_blank" rel="noopener noreferrer">
+                                {project.skills}
+                            </a>
                         </td>
                     </tr>
                 ))}

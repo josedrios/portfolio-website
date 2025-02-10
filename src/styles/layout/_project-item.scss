@@ -25,15 +25,6 @@
     }
 }
 
-#project-icon-container:hover {
-    .project-header {
-        color: white;
-    }
-    svg {
-        transform: translateX(12px);
-    }
-}
-
 .project-header-container {
     display: flex;
     flex-direction: row;
@@ -69,9 +60,20 @@
     transition: 0.3s;
 }
 
-#view-all-projects:hover {
-    background-color: rgba(0, 0, 0, 0.151);
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    box-shadow: 0 0 9px 9px rgba(0, 0, 0, 0.128);
-    cursor: pointer;
+@media (hover:hover) and (pointer: fine) {
+    #view-all-projects:hover {
+        background-color: rgba(0, 0, 0, 0.151);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        box-shadow: 0 0 9px 9px rgba(0, 0, 0, 0.128);
+        cursor: pointer;
+    }
+
+    #project-icon-container:hover {
+        .project-header {
+            color: white;
+        }
+        svg {
+            transform: translateX(12px);
+        }
+    }
 }

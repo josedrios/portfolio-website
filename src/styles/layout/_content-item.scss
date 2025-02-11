@@ -30,3 +30,20 @@
     font-weight: 450;
 }
 
+#skills-header {
+    margin-top: 5px !important;
+    color: rgb(236, 236, 236);
+    font-size: 25px;
+    font-weight: 450;
+}
+
+#skills-section {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+    svg {
+        font-size: 30px;
+        margin: 10px;
+    }
+}

@@ -54,7 +54,6 @@ nav {
         a:hover{
             color: white;
             cursor: pointer;
-            transform: translateX(7px);
         }
     }
 
@@ -71,10 +70,11 @@ nav {
 
 .nav-link.active {
     color: white !important;
+    transform: translateX(7px);
 }
 
 .icon {
-    font-size: 20px;
+    font-size: 23px;
     transition: visibility .07s ease;
 }
 
@@ -89,7 +89,6 @@ nav {
 @media (max-width: 970px){
     #links-section{
         max-width: 355px;
-        padding: 20px 10px;
     }
 }
 

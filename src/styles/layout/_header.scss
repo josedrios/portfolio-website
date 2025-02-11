@@ -19,7 +19,7 @@ nav {
     }
 
     a {
-        color: $unchosen-white;
+        color: $unchosen-nav;
         position: relative;
         display: inline-block;
         transition: 0.175s ease-out;
@@ -54,8 +54,7 @@ nav {
         a:hover{
             color: white;
             cursor: pointer;
-            font-weight: 400;
-            transform: translate(5px, -2px);
+            transform: translateX(7px);
         }
     }
 
@@ -65,10 +64,13 @@ nav {
     
             svg {
                 transform: scale(1.2);
-    
             }
         }
     }
+}
+
+.nav-link.active {
+    color: white !important;
 }
 
 .icon {

@@ -3,6 +3,17 @@ import Info from './info.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+// Project Preview Image Imports
+import Clashvote from './assets/clashvote.png'
+import ReadAI from './assets/ReadAI.png'
+import Tankgame from './assets/Tankgame.png'
+
+const imageMap = {
+    Clashvote: Clashvote,
+    ReadAI: ReadAI,
+    Tankgame: Tankgame,
+}
+
 function Projects() {
     return (
         <div id='project-section' className='content-item'>
@@ -19,6 +30,9 @@ function Projects() {
                         <p className="project-date">{project.date}</p>
                         <p className="project-skills">Skills: {project.skills}</p>
                         <p className="project-summary">{project.summary}</p>
+                        {project.preview && (
+                            <img className='project-preview-img' src={imageMap[project.preview]} alt="" />
+                        )}
                     </div>
                 ))}
             </div>

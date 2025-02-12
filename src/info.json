@@ -6,21 +6,24 @@
             "skills": "React, JS, CSS, HTML",
             "date": "July 1954",
             "summary": "The Lord of the Rings combines epic storytelling, rich characters, and immersive world-building, creating a timeless masterpiece that resonates with universal themes of friendship and the battle between good and evil.",
-            "link": "https://www.example.com/lotr"
+            "link": "https://www.example.com/lotr",
+            "preview": "Clashvote"
         },
         {
             "title": "One Piece",
             "skills": "C++, VMWare, VS Code",
             "date": "July 1997",
             "summary": "One Piece masterfully blends adventure, humor, and emotional depth as Luffy and his crew pursue dreams, tackling themes of friendship, freedom, and perseverance in a richly detailed world.",
-            "link": "https://www.example.com/one-piece"
+            "link": "https://www.example.com/one-piece",
+            "preview": "ReadAI"
         },
         {
             "title": "Gears of War",
             "skills": "Java, IntelliJ",
             "date": "November 2006",
             "summary": "Gears of War revolutionized third-person shooters with its intense combat, gritty setting, and compelling characters, offering an iconic and immersive experience.",
-            "link": "https://www.example.com/gears-of-war"
+            "link": "https://www.example.com/gears-of-war",
+            "preview": "Tankgame"
         },
         {
             "title": "Assassin's Creed 2",

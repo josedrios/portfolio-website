@@ -12,7 +12,7 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
             <table>
                 <thead>
                 <tr>
-                    <th>Project</th>
+                    <th id='project-col'>Project</th>
                     <th id='date-col'>Date</th>
                     <th className='hide-overlay-col'>Skills</th>
                 </tr>

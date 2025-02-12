@@ -33,7 +33,7 @@ function Projects() {
                         <p className="project-skills">Skills: {project.skills}</p>
                         <p className="project-summary">{project.summary}</p>
                         {project.preview && (
-                            <img className='project-preview-img' src={imageMap[project.preview]} alt="" />
+                            <img className='project-preview-img' id={project.preview === "Clashclicker" ? "coc-preview" : ""} src={imageMap[project.preview]} alt="" />
                         )}
                     </div>
                 ))}

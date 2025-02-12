@@ -61,12 +61,12 @@ table {
 @media (hover: hover) and (pointer: fine) {
     #close-overlay-button:hover {
         background-color: rgba(0, 0, 0, 0.128);
-        box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.128);
+        box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.128);
         cursor: pointer;
     }
 
     .project-row:hover {
-        background-color: rgba(69, 66, 66, 0.233);
+        background-color: rgba(57, 54, 54, 0.233);
     }
 
     .project-row:hover .project-row-link {
@@ -76,11 +76,12 @@ table {
 
 thead {
     border-bottom: 1px solid white;
+    font-size: 20px;
 }
 
 th, td {
     text-align: start;
-    font-family: $header-font;
+    font-family: $catalogue-font;
     vertical-align: middle;
     height: 45px;
 }
@@ -94,6 +95,10 @@ td > a {
 
 table tr:not(:last-child) {
     border-bottom: 1px solid #ffffff4b;
+}
+
+#project-col {
+    padding-left: 6px;
 }
 
 @media(max-width: 900px){

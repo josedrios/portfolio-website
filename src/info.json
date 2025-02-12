@@ -30,7 +30,8 @@
             "skills": "Python, Django, SQL",
             "date": "November 2009",
             "summary": "Assassin’s Creed 2 excels with its engaging story, Renaissance setting, and innovative gameplay, making it a standout in the franchise.",
-            "link": "https://www.example.com/assassins-creed-2"
+            "link": "https://www.example.com/assassins-creed-2",
+            "preview": "Clashclicker"
         },
         {
             "title": "Batman: Arkham Asylum",

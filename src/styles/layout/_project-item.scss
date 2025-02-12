@@ -31,7 +31,7 @@
 }
 
 .project-item *:not(:first-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .project-header{
@@ -81,11 +81,10 @@
 .project-preview-img {
     display: block;
     margin: auto;
-    width: 100%;
     height: auto;
-    padding-top: 5px;
+    margin-top: 5px;
     border-radius: 5px;
-    max-width: 700px;
+    max-width: 100%;
     max-height: 400px;
     object-fit: contain;
 }

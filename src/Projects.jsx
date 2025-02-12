@@ -7,11 +7,13 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Clashvote from './assets/clashvote.png'
 import ReadAI from './assets/ReadAI.png'
 import Tankgame from './assets/Tankgame.png'
+import Clashclicker from './assets/Clashclicker.png'
 
 const imageMap = {
     Clashvote: Clashvote,
     ReadAI: ReadAI,
     Tankgame: Tankgame,
+    Clashclicker: Clashclicker,
 }
 
 function Projects() {

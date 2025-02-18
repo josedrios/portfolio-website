@@ -1,87 +1,103 @@
 {
-  "aboutme": "Hello, I'm Jose, a passionate full-stack developer who loves turning ideas into real-world applications. My programming journey began in high school when I joined the Robotics Club, where I was inspired by innovative thinkers solving complex problems. This drive led me to pursue Computer Science at SFSU, immersing myself in a field that constantly evolves and shapes the future. My goal is to write clean, efficient, and scalable code that powers intuitive and impactful products. I thrive on challenges, embrace new technologies, and am always looking to push boundaries in software development.",
+  "aboutme": "My love for programming began in high school when I joined the Robotics Club, watching my peers turn pieces of metal into functioning robots through lines of code. This would lead me to start writing Java programs to help me solve my statistics and physics homework throughout high school and into college. Fast forward to now, I’m finishing up my CS degree at SFSU with several major projects under my belt and valuable insights gained from online coding courses. I’m excited for a full time career in programming.",
   "projects": [
     {
       "title": "Clashvote",
-      "skills": "Reac.js, Express.js, Sass, Git, VS Code",
+      "skills": "React.js, Express.js, Sass, Git, Github, VS Code",
       "date": "October 2024",
-      "summary": "Clashvote is a voting website where players vote on various aspects on the popular mobile game Clash of Clans, helping players of any skill level. Users also have the ability to search their own player stats, giving them insight on what their strength and weaknesses are as well as providing them a better overview on both their bases and their respective armies.",
+      "summary": "Clashvote is a voting website where users vote on various aspects on the popular mobile game Clash of Clans, helping players of any skill level. Users also have the ability to search for their own player stats, giving them insight on what their strength and weaknesses are as well as providing them a better overview on both their bases and their respective armies.",
       "link": "https://github.com/josedrios/clashvote",
       "preview": "Clashvote"
     },
     {
       "title": "ReadAI",
-      "skills": "Swift, Xcode",
+      "skills": "Swift, Git, Github, Xcode",
       "date": "December 2024",
-      "summary": "With my strong growing interest of reading, I decided to make an app that lets you search for information on a book or get recommendations for books on certain genres utilizing AI. ReadAI takes an displays the information of a given ISBN or a random ISBN given a genre and displays rudimentary information on the book but most importantly gives the user an AI generated summarization of the book.",
+      "summary": "With my strong growing interest of reading, I decided to make an app that lets you search for information on a book or get recommendations for books on certain genres utilizing AI. ReadAI takes and displays the information of a given ISBN or a random generated ISBN given a genre and displays rudimentary information on the book but most importantly gives the user an AI generated summarization of the book.",
       "link": "https://github.com/josedrios/AI-Book-Bot",
       "preview": "ReadAI"
     },
     {
       "title": "Clash Attack Finder",
-      "skills": "Python, Raspberry Pi, VS Code",
+      "skills": "Python, Raspberry Pi, Git, Github, VS Code",
       "date": "November 2024",
-      "summary": "My Clash of Clans Attack Finder is designed to eliminate the grind and maximize efficiency. By automating finding attackable bases, it helps players save time, letting users run this program while shifting their attention to anything else. Once a base is found that meets the players minimum loot threshold they will then be notified. This tool streamlines actions that would otherwise take hours, allowing players to focus on other activities instead of repeatedly pressing 'Next' to find the right base.",
+      "summary": "My Clash of Clans Attack Finder is designed to eliminate the grind and maximize efficiency by automating finding attackable bases. It works by reading the resource values from my phone screen, activating the servo which clicks the mouse to move to the next base through my Raspberry Pi or if a proper base is found that meets the players minimum loot threshold they will then be notified. This tool streamlines actions that would otherwise take hours, allowing players to focus on other activities instead of repeatedly pressing 'Next' to find the right base.",
       "link": "https://github.com/josedrios/clashofclansclicker",
       "preview": "Clashclicker"
     },
     {
       "title": "Tank Game",
-      "skills": "Java, IntelliJ",
+      "skills": "Java, Git, Github, IntelliJ",
       "date": "August 2023",
-      "summary": "As both a gamer and a programmer, I naturally found myself creating a game. The game features two Space Tanks, with the ability to shoot, traverse amongst the map, be able to pick up abilities as well as play alongside your best friend. ",
+      "summary": "As both a gamer and a programmer, I naturally brought myself to create a game. The game features two Space Tanks, with the ability to shoot, traverse amongst the map, be able to pick up abilities as well as play alongside your friends. ",
       "link": "https://github.com/josedrios/tankgame",
       "preview": "Tankgame"
     },
     {
       "title": "Portfolio Website",
-      "skills": "React.js, Sass, VS Code",
+      "skills": "React.js, Sass, AWS, Git, Github, VS Code",
       "date": "August 2024",
       "link": "https://github.com/josedrios/portfolio-website"
     },
     {
       "title": "Nature Share",
-      "skills": "HTML, CSS, Javascript, Node.js, Express.js, MySQL, Git, VS Code",
+      "skills": "HTML, CSS, Javascript, Node.js, Express.js, MySQL, Git, Github, VS Code",
       "date": "April 2023",
       "link": "https://github.com/josedrios/Nature-Share"
     },
     {
       "title": "AI Wake Detection",
-      "skills": "Python, VS Code",
+      "skills": "Python, Git, Github, VS Code",
       "date": "November 2024",
       "link": "https://github.com/josedrios/heymachine"
     },
     {
       "title": "StackerPal",
-      "skills": "React.js, Sass, VS Code",
+      "skills": "React.js, Sass, Git, Github, VS Code",
       "date": "October 2024",
       "link": "https://github.com/josedrios/StackerPal"
     },
     {
       "title": "Eat Music Sleep",
-      "skills": "HTML, CSS, Javascript, VS Code",
+      "skills": "HTML, CSS, Javascript, Git, Github, VS Code",
       "date": "July 2024",
       "link": "https://github.com/josedrios/Eat-Music-Sleep"
     },
     {
       "title": "GatorMarket",
-      "skills": "HTML, CSS, Javascript, MySQL, VS Code",
+      "skills": "HTML, CSS, Javascript, MySQL, AWS, Git, Github, VS Code",
       "date": "March 2024",
       "link": "https://github.com/josedrios/GatorMarket"
+    },
+    {
+      "title": "File System",
+      "skills": "C, VMware, Linux, Git, Github, VS Code",
+      "date": "May 2024",
+      "link": "https://github.com/josedrios/file-system"
+    },
+    {
+      "title": "Fashion Model Database System",
+      "skills": "MySQL, Python, Git, Github, IntelliJ",
+      "date": "August 2023",
+      "link": "https://github.com/josedrios/fashion-database-system"
     }
   ],
   "faqContent": [
     {
       "question": "Who am I?",
-      "answer": "No answer has been made yet"
+      "answer": "I'm a curiosity driven programmer, with a strong passion for creating dynamic and interactive applications. I am from San Francisco and specialize in full-stack web development, working with technologies like React, Express.js and MySQL."
+    },
+    {
+      "question": "How did I learn to code?",
+      "answer": "I got into programming after my experience with the Robotics Club in my high school then proceeded to start computer science in college. Through personal projects, and projects assigned to me from courses, I have honed my skills in full-stack development."
     },
     {
       "question": "What are some of my hobbies?",
-      "answer": "No answer has been made yet"
+      "answer": "My hobbies include bodybuilding, cycling, and gaming. I enjoy training in the gym daily for most of the week because there is no better stress reliever. When I am not coding or training, I like to play video games that immerse me in another world or cycling with my friends in the city."
     },
     {
-      "question": "?",
-      "answer": "No answer has been made yet"
+        "question": "What do I love most about programming?",
+        "answer": "I love the concept that there is no set limit on what coding can create, who it can help and how beautiful the product can look. Programming is another medium of expression for me, open to endless possibilities. Not only are the creations of programming amazing but so is the process. Watching yourself start as a novice with a certain skill and be able to visibly see your improvement is such a beautiful thing."
     }
   ]
 }

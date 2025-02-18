@@ -14,7 +14,7 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                 <tr>
                     <th id='project-col'>Project</th>
                     <th id='date-col'>Date</th>
-                    <th className='hide-overlay-col'>Skills</th>
+                    <th className='hide-overlay-col skill-th'>Skills</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -31,7 +31,7 @@ function ProjectOverlay({isOverlayVisible, closeOverlay}) {
                             </a>
                         </td>
                         <td className='td-middle hide-overlay-col'>
-                            <a className='project-row-link' href={project.link} target="_blank" rel="noopener noreferrer">
+                            <a className='project-row-link skill-td' href={project.link} target="_blank" rel="noopener noreferrer">
                                 {project.skills}
                             </a>
                         </td>
